@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ortiizzz.com/sitemap.xml

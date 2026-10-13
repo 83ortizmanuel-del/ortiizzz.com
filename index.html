@@ -1,846 +1,604 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5RS6D7T0V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E5RS6D7T0V');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ORTIZZZ · Sitio oficial, música, booking y EPK</title>
+<meta name="description" content="ORTIZZZ, artista urbano venezolano afincado en España. Dancehall, afro y reggaetón con guitarra propia. Escucha su música, descarga el EPK y contrata shows, acústicos y colaboraciones.">
+<link rel="canonical" href="https://ortiizzz.com/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#050505">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="ORTIZZZ">
+<meta property="og:title" content="ORTIZZZ · New Era">
+<meta property="og:description" content="Dancehall, afro y reggaetón con guitarra propia. Música, booking y EPK oficial.">
+<meta property="og:url" content="https://ortiizzz.com/">
+<meta property="og:image" content="https://ortiizzz.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ortiizzz.com/img/og.jpg">
+<link rel="icon" href="img/firma.webp" type="image/webp">
+<link rel="preload" href="img/hero.webp" as="image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MusicGroup","name":"ORTIZZZ","alternateName":["Ortizzz","ORTIIZZZ"],"url":"https://ortiizzz.com/","image":"https://ortiizzz.com/img/og.jpg","genre":["Dancehall","Afrobeat","Reggaetón","Urbano latino"],"foundingLocation":{"@type":"Place","name":"España"},"sameAs":["https://instagram.com/ortiizzzp/","https://tiktok.com/@ortizzzviejo","https://youtube.com/@Ortizzzp"],"contactPoint":{"@type":"ContactPoint","contactType":"booking","email":"ceo@studio42.es","telephone":"+34641607302"}}
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO TÉCNICO STUDIO 42 -->
-    <title>Ortizzz | Sitio Oficial, Música & EPK - Studio 42</title>
-    <meta name="description" content="Sitio oficial de Ortizzz. Artista urbano autodidacta. Descubre sus últimos videoclips, proyectos, merchandising exclusivo y contrataciones a través de Studio 42.">
-    <meta name="keywords" content="Ortizzz, Ortizzz musica, Ortizzz artista, Ortizzz reggaeton, Ortizzz trap, Ortizzz Venezuela, artista urbano España, Studio 42, EPK Ortizzz, contrataciones Ortizzz, New Era Ortizzz">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Studio 42">
+<style>
+:root{--bg:#050505;--bg2:#0c0c0d;--bg3:#141416;--line:rgba(255,255,255,.08);--txt:#f4f4f4;--mut:#9a9a9f;--rose:#fd1d53;--lime:#ccff00;
+  --fd:"Helvetica Neue","Arial Black",Arial,sans-serif;--fb:"Helvetica Neue",Arial,system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--txt);font:400 16px/1.6 var(--fb);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+[hidden]{display:none!important}
+.w{width:min(100% - 32px,1080px);margin:0 auto}
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Ortizzz | Sitio Oficial & EPK">
-    <meta property="og:description" content="Descubre la propuesta sonora y audiovisual de Ortizzz. New Era.">
-    <meta property="og:image" content="foto-ortizzz.jpg">
-    <meta property="og:type" content="website">
+/* Barra superior */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:12px;padding:12px 16px;transition:background .3s}
+.top.solid{background:rgba(5,5,5,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .logo{font:900 1rem var(--fd);letter-spacing:.32em;text-decoration:none;margin-right:auto}
+.top nav{display:none;gap:22px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.top nav a{text-decoration:none;color:var(--mut)}.top nav a:hover{color:var(--txt)}
+.pill{border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:99px;padding:7px 12px;font-size:.75rem;letter-spacing:.1em}
+.pill.rose{background:var(--rose);border-color:var(--rose);color:#fff;text-decoration:none;font-weight:700}
+@media(min-width:900px){.top nav{display:flex}}
 
-    <style>
-        /* Paleta Élite Studio 42 */
-        :root {
-            --bg-deep: #050505;
-            --bg-grey: #0d0d0d;
-            --text-muted: #777777;
-            --text-light: #f4f4f4;
-            --s42-rose: #fd1d53; 
-            --pistachio-neon: #ccff00; 
-        }
-        
-        html { scroll-behavior: smooth; }
-        
-        body, html {
-            margin: 0; padding: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--bg-deep);
-            color: var(--text-light);
-            overflow-x: hidden;
-        }
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:0 0 64px;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 30%;transform:scale(1.04);animation:respira 18s ease-in-out infinite alternate}
+@keyframes respira{to{transform:scale(1.1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,5,5,.25) 0%,rgba(5,5,5,.2) 45%,rgba(5,5,5,.96) 100%)}
+.hero .in{position:relative;z-index:2;padding-top:84px}
+.kicker{display:inline-flex;gap:8px;align-items:center;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--lime);font-weight:700}
+.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime)}
+h1{font:900 clamp(3.6rem,16vw,10rem)/.86 var(--fd);letter-spacing:-.02em;margin:14px 0 8px;color:#fff;text-shadow:0 0 40px rgba(253,29,83,.45)}
+.firma{width:clamp(96px,18vw,170px);height:auto;margin:-18px 0 4px 8px;filter:drop-shadow(0 2px 10px #000);opacity:.95}
+.lead{max-width:560px;color:#d9d9de;font-size:clamp(1rem,2.4vw,1.2rem);margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:6px;border:1px solid var(--line);background:rgba(255,255,255,.05);text-decoration:none;font-weight:700;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;transition:transform .2s,background .2s}
+.btn:active{transform:scale(.98)}
+.btn.rose{background:var(--rose);border-color:var(--rose);color:#fff;box-shadow:0 10px 30px rgba(253,29,83,.35)}
+.btn.lime{background:var(--lime);border-color:var(--lime);color:#050505}
+.btn.ghost{background:rgba(5,5,5,.5);backdrop-filter:blur(8px)}
+.btn svg{width:18px;height:18px;fill:currentColor;flex:none}
+.redes{display:flex;gap:10px;margin-top:22px}
+.redes a{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--line);background:rgba(5,5,5,.5);color:#ddd}
+.redes a:hover{color:var(--rose);border-color:var(--rose)}
+.redes svg{width:18px;height:18px;fill:currentColor}
 
-        /* PANTALLA DE ENTRADA */
-        #overlay-entrada {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100vh;
-            background-color: #000;
-            z-index: 10000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: opacity 0.8s ease;
-        }
+/* Secciones */
+section{padding:84px 0;border-top:1px solid var(--line)}
+.eti{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--lime);font-weight:700}
+h2{font:900 clamp(2rem,6vw,3.4rem)/1 var(--fd);letter-spacing:-.01em;margin:10px 0 18px}
+h3{font:800 1.1rem var(--fd);margin:0 0 6px;letter-spacing:.02em}
+.mut{color:var(--mut)}
+.grid2{display:grid;gap:28px}
+@media(min-width:860px){.grid2{grid-template-columns:1.1fr .9fr;align-items:center}}
 
-        .fade-up {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
-        
-        .fade-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+/* Vídeo ligero */
+.video{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000 center/cover;border:1px solid var(--line);box-shadow:0 30px 60px rgba(0,0,0,.7)}
+.video button{position:absolute;inset:0;width:100%;border:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.8));display:flex;align-items:flex-end;justify-content:space-between;padding:18px;text-align:left}
+.video .play{width:68px;height:68px;border-radius:50%;background:var(--rose);display:grid;place-items:center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 10px rgba(253,29,83,.25)}
+.video .play svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.plataformas{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 
-        @keyframes neonPulse {
-            0% { text-shadow: 0 0 15px rgba(253, 29, 83, 0.3), 0 0 30px rgba(253, 29, 83, 0.1); }
-            50% { text-shadow: 0 0 25px rgba(253, 29, 83, 0.6), 0 0 50px rgba(253, 29, 83, 0.3); }
-            100% { text-shadow: 0 0 15px rgba(253, 29, 83, 0.3), 0 0 30px rgba(253, 29, 83, 0.1); }
-        }
+/* Bio */
+.tabs{display:flex;gap:6px;margin:6px 0 14px}
+.tabs button{border:1px solid var(--line);background:none;border-radius:99px;padding:7px 14px;font-size:.78rem;letter-spacing:.08em;color:var(--mut)}
+.tabs button[aria-selected=true]{background:var(--txt);color:var(--bg);border-color:var(--txt)}
+.bio p{color:#c9c9ce;font-size:1.06rem;margin:0 0 14px}
+.bio strong{color:#fff}
+.retrato{border-radius:10px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/5;object-fit:cover;width:100%}
+.datos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:20px}
+.dato{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:14px}
+.dato b{display:block;font:900 1.5rem var(--fd);color:#fff}
+.dato span{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
 
-        .lang-switch {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 10;
-            background: rgba(13, 13, 13, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--text-light);
-            padding: 8px 12px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            backdrop-filter: blur(10px);
-            outline: none;
-            cursor: pointer;
-        }
+/* Booking */
+.formatos{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:6px 0 30px}
+.formato{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--rose);border-radius:8px;padding:18px}
+.formato p{margin:0;color:var(--mut);font-size:.92rem}
+form.book{display:grid;gap:12px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:20px}
+@media(min-width:700px){form.book{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
+label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px;border-radius:6px;background:var(--bg3);border:1px solid var(--line);color:var(--txt);font:inherit;font-size:16px}
+textarea{min-height:90px;resize:vertical}
+.envio{display:flex;flex-wrap:wrap;gap:10px}
 
-        .hero {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            background: url('foto-ortizzz.jpg') no-repeat center top/cover;
-            background-attachment: fixed; 
-        }
+/* Fechas */
+.fechas{display:grid;gap:8px}
+.fecha{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+.fecha .d{font:900 1.4rem/1 var(--fd);text-align:center;min-width:52px}.fecha .d small{display:block;font-size:.65rem;letter-spacing:.14em;color:var(--rose)}
+.vacio{background:var(--bg2);border:1px dashed var(--line);border-radius:10px;padding:26px;text-align:center}
 
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to bottom, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.95) 100%);
-            z-index: 1;
-        }
+/* Tienda */
+.tienda{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.prod{background:var(--bg2);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.prod img{aspect-ratio:4/3;object-fit:cover;width:100%;cursor:zoom-in}
+.prod .c{padding:18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.prod .precio{font:900 1.4rem var(--fd);color:var(--rose)}
+.prod .c .btn{margin-top:auto}
+.tag{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);font-weight:700}
 
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding: 0 20px;
-            width: 100%;
-            box-sizing: border-box;
-            margin-top: 5vh;
-        }
+/* Prensa */
+.prensa{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.prensa a.ph{position:relative;display:block;border-radius:8px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3}
+.prensa a.ph img{width:100%;height:100%;object-fit:cover}
+.prensa a.ph span{position:absolute;left:10px;bottom:10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;background:rgba(0,0,0,.7);padding:6px 10px;border-radius:99px}
 
-        h1 {
-            font-size: clamp(3.5rem, 13vw, 11rem);
-            margin: 0;
-            letter-spacing: -3px;
-            color: transparent;
-            -webkit-text-stroke: 1.8px var(--s42-rose);
-            text-transform: uppercase;
-            line-height: 0.9;
-            font-weight: 900;
-            animation: neonPulse 2.5s infinite alternate;
-        }
+/* Contacto */
+.contacto{text-align:center}
+.contacto .btn{min-width:240px}
 
-        .hero-signature-wrapper {
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-top: -10px;
-        }
+footer{border-top:1px solid var(--line);padding:40px 0 calc(90px + env(safe-area-inset-bottom));text-align:center;color:#55555b;font-size:.75rem;letter-spacing:.08em}
+footer a{color:#77777d}
 
-        .hero-signature {
-            width: clamp(220px, 40vw, 360px);
-            filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.95));
-            opacity: 0.95;
-            pointer-events: none;
-        }
+/* Reproductor flotante */
+.player{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:99px;background:rgba(12,12,13,.9);border:1px solid var(--line);backdrop-filter:blur(10px)}
+.player button{width:38px;height:38px;border-radius:50%;border:0;background:var(--rose);display:grid;place-items:center}
+.player svg{width:16px;height:16px;fill:#fff}
+.player span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.eq{display:inline-flex;gap:2px;align-items:flex-end;height:12px;margin-left:4px}.eq i{width:3px;background:var(--lime);height:30%;animation:eq 1s infinite ease-in-out}.eq i:nth-child(2){animation-delay:.2s}.eq i:nth-child(3){animation-delay:.4s}
+@keyframes eq{50%{height:100%}}
+.player:not(.on){display:none}
 
-        .subtitle {
-            color: #ffffff;
-            letter-spacing: 10px;
-            font-size: clamp(0.85rem, 2vw, 1.2rem);
-            margin-top: 12px;
-            text-transform: uppercase;
-            font-weight: 600;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.8);
-            display: inline-block;
-            padding: 6px 16px;
-            background: rgba(0, 0, 0, 0.35);
-            border-radius: 20px;
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
+/* Modal */
+.modal{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:60px 16px 30px}
+.modal .caja{width:min(100%,760px);background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:24px;position:relative}
+.modal .x{position:fixed;top:14px;right:16px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--bg3);font-size:1.4rem}
+.modal table{width:100%;border-collapse:collapse;font-size:.85rem;text-align:center}
+.modal td,.modal th{border:1px solid var(--line);padding:7px}
+.modal ul{color:#bbb;padding-left:20px}
 
-        .subtitle span {
-            color: var(--pistachio-neon);
-            font-weight: 800;
-            text-shadow: 0 0 12px rgba(204, 255, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.9);
-        }
+/* Cookies */
+.cookies{position:fixed;left:16px;right:16px;bottom:calc(76px + env(safe-area-inset-bottom));z-index:60;max-width:520px;margin:0 auto;background:var(--bg3);border:1px solid var(--line);border-radius:10px;padding:14px;font-size:.85rem;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.cookies p{margin:0;flex:1 1 240px;color:#cfcfd4}
+.cookies .btn{padding:10px 14px;font-size:.72rem}
 
-        .social-icons-row {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
+#toast{position:fixed;left:50%;top:76px;transform:translate(-50%,-10px);opacity:0;z-index:90;background:var(--txt);color:var(--bg);padding:10px 16px;border-radius:99px;font-weight:700;font-size:.85rem;transition:.25s;pointer-events:none}
+#toast.on{opacity:1;transform:translate(-50%,0)}
 
-        .social-icon-btn {
-            color: var(--text-muted);
-            width: 22px;
-            height: 22px;
-            transition: all 0.3s ease;
-            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.8));
-        }
-
-        .social-icon-btn svg { width: 100%; height: 100%; fill: currentColor; }
-        .social-icon-btn:hover { color: var(--s42-rose); transform: translateY(-3px); }
-
-        .quick-links {
-            position: relative;
-            z-index: 3;
-            max-width: 500px;
-            margin: -3vh auto 0 auto;
-            padding: 0 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 22px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--text-light);
-            background: rgba(13, 13, 13, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-            backdrop-filter: blur(12px);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            box-sizing: border-box;
-            cursor: pointer;
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 4px;
-            height: 100%;
-            background-color: var(--s42-rose);
-            transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-            z-index: -1;
-        }
-
-        .btn:hover {
-            color: #fff;
-            border-color: transparent;
-            transform: scale(1.02);
-            box-shadow: 0 15px 25px rgba(253, 29, 83, 0.15);
-        }
-
-        .btn:hover::before { width: 100%; }
-        .btn-store::before { background-color: var(--pistachio-neon); }
-        .btn-store:hover { color: var(--bg-deep); box-shadow: 0 15px 25px rgba(204, 255, 0, 0.15); }
-
-        .epk-container {
-            max-width: 800px;
-            margin: 140px auto;
-            padding: 0 20px;
-            position: relative;
-            z-index: 3;
-        }
-
-        .section-title {
-            color: var(--pistachio-neon);
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin-bottom: 25px;
-            font-weight: 700;
-            display: inline-block;
-            border-bottom: 2px solid var(--text-muted);
-            padding-bottom: 8px;
-        }
-
-        .bio-text {
-            color: var(--text-muted);
-            font-size: 1.25rem;
-            line-height: 1.8;
-            margin-bottom: 90px;
-            font-weight: 300;
-        }
-
-        .bio-text strong {
-            color: var(--text-light);
-            font-weight: 600;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            background-color: var(--bg-grey);
-            border-radius: 6px;
-            margin-bottom: 80px;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.9);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-        }
-
-        .store-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 25px;
-            margin-top: 25px;
-            margin-bottom: 90px;
-        }
-
-        .store-item {
-            background: #0a0a0a;
-            border: 1px solid #1a1a1a;
-            border-radius: 6px;
-            overflow: hidden;
-            text-align: center;
-            padding-bottom: 25px;
-            transition: border-color 0.3s, transform 0.3s;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .store-item:hover { 
-            border-color: var(--pistachio-neon);
-            transform: translateY(-5px);
-        }
-
-        .store-item img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
-        }
-
-        .store-item img:hover {
-            opacity: 0.85;
-        }
-
-        .footer {
-            background-color: var(--bg-grey);
-            text-align: center;
-            padding: 80px 20px 40px 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.02);
-            position: relative;
-        }
-        
-        .footer-logo {
-            color: var(--text-light);
-            font-size: 1.2rem;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            font-weight: 900;
-            margin-bottom: 30px;
-        }
-        
-        .footer-logo span { color: var(--s42-rose); }
-        .legal-text { color: #444; font-size: 0.75rem; line-height: 1.6; letter-spacing: 1px; text-transform: uppercase; }
-        .legal-text a { color: #555; text-decoration: none; transition: color 0.3s ease; }
-        .legal-text a:hover { color: var(--s42-rose); }
-
-        @media (max-width: 768px) {
-            .hero {
-                background-attachment: scroll !important;
-                background-position: center 15% !important;
-            }
-
-            .hero-content {
-                background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 85%);
-                padding: 20px 10px;
-                margin-top: 8vh;
-            }
-
-            h1 {
-                font-weight: 900;
-                color: #fd1d53 !important; 
-                -webkit-text-stroke: 0px !important; 
-                text-shadow: 0 0 15px rgba(253, 29, 83, 0.8), 0 0 2px #000;
-                font-size: 2.8rem !important;
-                letter-spacing: 2px;
-            }
-
-            .subtitle {
-                background: transparent;
-                border: none;
-                padding: 0;
-                color: #ffffff !important; 
-                text-shadow: 0 2px 4px rgba(0,0,0,0.9);
-                font-weight: 600;
-                font-size: 0.85rem;
-                letter-spacing: 3px;
-                margin-top: 8px;
-            }
-
-            .subtitle span {
-                color: #ccff00 !important; 
-                text-shadow: 0 0 10px rgba(204, 255, 0, 0.6);
-            }
-
-            .hero-signature {
-                width: 240px;
-            }
-        }
-    </style>
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.v{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
 </head>
 <body>
 
-    <!-- OVERLAY DE ENTRADA -->
-    <div id="overlay-entrada">
-        <h1 style="color: #fff; font-size: 2rem; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 8px;">Ortizzz</h1>
-        <button onclick="iniciarExperiencia()" class="btn" style="width: auto; padding: 15px 40px; border-color: var(--s42-rose);">Entrar a la New Era</button>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.1z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.4 7H19.6zM4 9v8h16V9l-8 5.5z"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24"><path d="M11 3h2v10l3.5-3.5 1.4 1.4L12 16.8l-5.9-5.9 1.4-1.4L11 13zM4 19h16v2H4z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3.1 0-4.1.1C3.7 2.3 2.3 3.7 2.1 7.9 2 8.9 2 9.3 2 12s0 3.1.1 4.1c.2 4.2 1.6 5.6 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c4.2-.2 5.6-1.6 5.8-5.8.1-1 .1-1.4.1-4.1s0-3.1-.1-4.1c-.2-4.2-1.6-5.6-5.8-5.8C15.1 2 14.7 2 12 2z"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2-2.8V9.1a6.3 6.3 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.4 1.3V6.5a4.5 4.5 0 0 1-4.4-4.5z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></symbol>
+  <symbol id="i-sp" viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm5.5 17.3c-.2.4-.7.5-1 .3-2.8-1.7-6.4-2.1-10.6-1.1-.4.1-.8-.2-.9-.6-.1-.4.2-.8.6-.9 4.6-1 8.5-.6 11.6 1.3.4.2.5.7.3 1zm1.5-3.3c-.3.4-.8.6-1.3.3-3.2-2-8.2-2.6-11.9-1.4-.5.1-1-.1-1.1-.6-.1-.5.1-1 .6-1.1 4.3-1.3 9.7-.7 13.4 1.6.4.2.6.8.3 1.2zm.1-3.4C15.2 8.4 8.8 8.2 5.2 9.3c-.6.2-1.2-.2-1.4-.7-.2-.6.2-1.2.7-1.4 4.3-1.3 11.3-1 15.7 1.6.5.3.7 1 .4 1.6-.3.4-1 .6-1.5.3z"/></symbol>
+</svg>
+
+<header class="top" id="top">
+  <a class="logo" href="#inicio">ORTIZZZ</a>
+  <nav aria-label="Secciones">
+    <a href="#musica" data-i="nMusica">Música</a><a href="#bio" data-i="nBio">Bio</a><a href="#booking" data-i="nBooking">Booking</a><a href="#tienda" data-i="nTienda">Tienda</a><a href="#prensa" data-i="nPrensa">Prensa</a>
+  </nav>
+  <button class="pill" id="bLang" type="button" aria-label="Cambiar idioma">EN</button>
+  <a class="pill rose" href="#booking" data-i="contratar">Contratar</a>
+</header>
+
+<main>
+<section class="hero" id="inicio" style="border:0;padding-top:0">
+  <img class="bg" src="img/hero.webp" alt="ORTIZZZ con letras pintadas en la piel" fetchpriority="high">
+  <div class="w in rv">
+    <span class="kicker" data-i="kicker">New Era · Dancehall · Afro · Reggaetón</span>
+    <h1>ORTIZZZ</h1>
+    <img class="firma" src="img/firma.webp" alt="" width="250" height="375">
+    <p class="lead" data-i="lead">Voz y guitarra propia. De Venezuela a España, convierte cada golpe en música.</p>
+    <div class="ctas">
+      <a class="btn rose" href="#musica"><svg><use href="#i-play"/></svg><span data-i="ctaEscuchar">Escuchar</span></a>
+      <button class="btn ghost" type="button" id="bAdelanto"><svg><use href="#i-play"/></svg><span data-i="adelanto">Adelanto</span></button>
+      <a class="btn ghost" href="#booking" data-i="ctaContratar">Contratar un show</a>
     </div>
+    <div class="redes" id="redes"></div>
+  </div>
+</section>
 
-    <!-- REPRODUCTOR DE AUDIO OCULTO -->
-    <audio id="bg-audio" loop>
-        <source src="track-fondo.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- SELECTOR DE IDIOMA -->
-    <select class="lang-switch" id="langSelector" onchange="changeLanguage(this.value)">
-        <option value="es">ES</option>
-        <option value="en">EN</option>
-        <option value="fr">FR</option>
-    </select>
-
-    <!-- BOTÓN FLOTANTE MUTE / UNMUTE -->
-    <button id="btn-audio-toggle" onclick="toggleAudio()" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 999; background: rgba(13, 13, 13, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--text-light); padding: 10px 15px; border-radius: 20px; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; backdrop-filter: blur(10px); box-shadow: 0 4px 15px rgba(0,0,0,0.5); transition: all 0.3s ease;">
-        <span id="audio-status">🔊 Sound ON</span>
-    </button>
-
-    <header class="hero">
-        <div class="hero-content fade-up">
-            <h1>ORTIZZZ</h1>
-            <p class="subtitle" id="sub-title">Welcome to the <span>New Era</span></p>
-            
-            <div class="social-icons-row">
-                <a href="https://instagram.com/ortiizzzp/" target="_blank" class="social-icon-btn" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-                <a href="https://tiktok.com/@ortizzzviejo" target="_blank" class="social-icon-btn" title="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.28 1.76-.23.93.02 1.93.64 2.62.63.72 1.59 1.12 2.54 1.08.88-.01 1.74-.41 2.29-1.1.58-.7.83-1.61.82-2.52.01-4.73.01-9.46.01-14.19z"/></svg></a>
-                <a href="https://youtube.com/@Ortizzzp" target="_blank" class="social-icon-btn" title="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
-                <a href="https://open.spotify.com/search/Ortizzz" target="_blank" class="social-icon-btn" title="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
-            </div>
-
-            <div class="hero-signature-wrapper">
-                <img src="firma-ortizzz.png" alt="Firma Ortizzz" class="hero-signature">
-            </div>
-        </div>
-    </header>
-
-    <nav class="quick-links">
-        <a href="https://open.spotify.com/search/Ortizzz" target="_blank" class="btn fade-up" id="btn-spotify">Spotify</a>
-        <a href="#video" class="btn fade-up" id="btn-video" style="transition-delay: 0.1s;">Videoclip Oficial</a>
-        <a href="#tickets" class="btn fade-up" id="btn-tickets" style="transition-delay: 0.2s;">Entradas & Shows</a>
-        <a href="#tienda" class="btn btn-store fade-up" id="btn-store" style="transition-delay: 0.3s;">Tienda & Merch</a>
-        <a href="#contacto" class="btn fade-up" id="btn-contact" style="transition-delay: 0.4s;">Booking & Contacto</a>
-    </nav>
-
-    <main class="epk-container">
-        
-        <section id="bio" class="fade-up">
-            <h2 class="section-title" id="title-project">El Proyecto</h2>
-            <div class="bio-text">
-                <p id="bio-p1">Nacido en Venezuela, <strong>Ortizzz</strong> descubrió en la música su mayor refugio y su voz más honesta. A los 18 años tomó la decisión de cruzar el océano para establecerse en España, enfrentándose de golpe a la crudeza de empezar desde cero. Lejos de su tierra, el complejo y a menudo solitario escenario de la inmigración se convirtió en una dura prueba de supervivencia. Sin embargo, en medio de la lucha por mantenerse firme y cumplir sus metas, esa misma adversidad forjó en él un carácter inquebrantable que hoy define la profundidad de sus letras.</p>
-                <p id="bio-p2">Músico cien por ciento autodidacta y un apasionado de transmitir emociones genuinas, encontró en las cuerdas de su guitarra y en los ritmos urbanos la herramienta perfecta para contar su historia. Su propuesta sonora nace de la fusión entre el dancehall, el afro y el reggaetón, géneros que interpreta con una identidad propia, fresca y reconocible. Pero su esencia no entiende de etiquetas: Ortizzz posee una versatilidad que le permite transitar con naturalidad por cualquier estilo musical, desde una producción de alta energía hasta una balada a guitarra limpia, sin perder nunca el sello que lo distingue.</p>
-                <p id="bio-p3">A pesar de los obstáculos y las malas experiencias, su determinación por hacer lo que le apasiona nunca se ha detenido. Hoy, en su <strong>New Era</strong>, Ortizzz no solo canta; convierte cada experiencia en música y cada desafío en una declaración de resiliencia. Respaldado por una dirección creativa integral y una visión artística sólida, su proyecto es un testimonio de autenticidad absoluta. Ortizzz no persigue las tendencias de la industria; las transforma y les imprime su propia identidad.</p>
-            </div>
-        </section>
-
-        <section id="video" class="fade-up">
-            <h2 class="section-title" id="title-visuals">Visuales</h2>
-            <div class="video-container">
-                <iframe 
-                    id="youtube-player"
-                    width="100%" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/4VrczY2Axac?rel=0&modestbranding=1&cc_load_policy=0&playsinline=1&enablejsapi=1" 
-                    title="Ortizzz - Placata" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </section>
-
-        <section id="tickets" class="fade-up" style="margin-bottom: 90px;">
-            <h2 class="section-title" id="title-tickets">Live & Tickets</h2>
-            <div style="background: #080808; border-left: 3px solid var(--s42-rose); padding: 35px 25px; text-align: left; position: relative; border-radius: 2px;">
-                <span style="color: var(--pistachio-neon); font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; font-weight: bold;">Próximo Evento</span>
-                <h3 style="color: #fff; font-size: 1.8rem; margin: 10px 0; text-transform: uppercase; letter-spacing: -1px;">Ortizzz: New Era Live</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px;">Acceso Exclusivo / Show Privado Digital + Q&A.</p>
-                <a href="https://wa.me/34641607302?text=Hola%20Studio%2042,%20quiero%20comprar%20mi%20Ticket%20Digital%20con%20QR%20para%20el%20proximo%20evento%20de%20Ortizzz" target="_blank" class="btn" style="width: auto; display: inline-block; padding: 15px 35px; font-size: 0.8rem; background: transparent; border: 1px solid var(--s42-rose); box-shadow: none;">Comprar Ticket (QR)</a>
-            </div>
-        </section>
-
-        <section id="tienda" class="fade-up" style="margin-bottom: 90px;">
-            <h2 class="section-title" id="title-store">Merch & Servicios</h2>
-            <div class="store-grid">
-                
-                <!-- PRODUCTO 1: CAMISETA DROP 001 -->
-                <div class="store-item">
-                    <img src="producto-camiseta.jpg" alt="Camiseta Ortizzz x Nómadas" onclick="abrirModalCamiseta(this.src)" title="Haz clic para ver especificaciones y detalles">
-                    <h3 style="color: #fff; margin: 15px 0 5px 0; font-size: 1.1rem; text-transform: uppercase;">Ortizzz × Nómadas</h3>
-                    <p style="color: var(--text-muted); font-size: 0.75rem; margin: 0 0 10px 0; text-transform: uppercase; letter-spacing: 1px;">Drop 001 — Boxy Fit 350 GSM</p>
-                    <p style="color: var(--s42-rose); font-weight: bold; font-size: 1.3rem; margin-bottom: 15px;">25,00 €</p>
-                    <button onclick="abrirModalCamiseta('producto-camiseta.jpg')" class="btn" style="padding: 10px 20px; font-size: 0.75rem; width: 85%; margin: 0 auto 10px auto; border: 1px solid var(--pistachio-neon); background: transparent; color: var(--pistachio-neon);">Ver Ficha Técnica</button>
-                </div>
-
-                <!-- PRODUCTO 2: FEATURING -->
-                <div class="store-item">
-                    <img src="producto-featuring.JPG" alt="Servicios de Composicion y Vocal" onclick="abrirModal(this.src)" title="Haz clic para ampliar">
-                    <h3 style="color: #fff; margin: 15px 0 5px 0; font-size: 1.2rem;">Colaboración / Feat</h3>
-                    <p style="color: var(--s42-rose); font-weight: bold; font-size: 1.3rem; margin-bottom: 15px;">Consultar</p>
-                    <a href="https://wa.me/34641607302?text=Hola%20ORTIIZZZ,%20me%20interesa%20contratar%20un%20Featuring/Estribillo%20con%20Ortizzz%20para%20mi%20cancion" target="_blank" class="btn" style="padding: 10px 20px; font-size: 0.8rem; width: 85%; margin: 0 auto; border: 1px solid #222; background: transparent; box-shadow: none;">Más Info</a>
-                </div>
-
-                <!-- PRODUCTO 3: SMART CARD NFC VIP -->
-                <div class="store-item">
-                    <img src="producto-nfc.jpg" alt="Smart Card VIP Ortizzz" onclick="abrirModalNFC(this.src)" title="Haz clic para descubrir los beneficios VIP">
-                    <h3 style="color: #fff; margin: 15px 0 5px 0; font-size: 1.1rem; text-transform: uppercase;">Smart Card NFC (Pase VIP)</h3>
-                    <p style="color: var(--text-muted); font-size: 0.75rem; margin: 0 0 10px 0; text-transform: uppercase; letter-spacing: 1px;">Edición Limitada — Acceso Exclusivo</p>
-                    <p style="color: var(--s42-rose); font-weight: bold; font-size: 1.3rem; margin-bottom: 15px;">15,00 €</p>
-                    <button onclick="abrirModalNFC('producto-nfc.jpg')" class="btn" style="padding: 10px 20px; font-size: 0.75rem; width: 85%; margin: 0 auto 10px auto; border: 1px solid var(--pistachio-neon); background: transparent; color: var(--pistachio-neon);">Ver Beneficios VIP</button>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="contacto" class="fade-up" style="margin-bottom: 90px; text-align: center;">
-            <h2 class="section-title" id="title-contact">Booking & Management</h2>
-            
-            <div style="margin-top: 30px;">
-                <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 4px; font-size: 0.75rem; margin-bottom: 10px;">Representación Exclusiva</p>
-                <h3 style="color: #fff; font-size: 1.3rem; margin: 0 0 30px 0; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;">Studio 42</h3>
-                
-                <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
-                    <a href="mailto:ceo@studio42.es" style="color: var(--text-light); text-decoration: none; font-size: 1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(204, 255, 0, 0.4); padding-bottom: 5px; transition: all 0.3s ease;">
-                        ceo@studio42.es
-                    </a>
-                    
-                    <a href="https://wa.me/34641607302?text=Hola%20Studio%2042,%20quisiera%20solicitar%20informaci%C3%B3n%20formal%20para%20contratar%20a%20Ortizzz" target="_blank" style="color: var(--text-light); text-decoration: none; font-size: 1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(253, 29, 83, 0.4); padding-bottom: 5px; transition: all 0.3s ease;">
-                        +34 641 60 73 02
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer fade-up">
-        <div class="footer-logo">STUDIO <span>42</span></div>
-        <div class="legal-text">
-            &copy; 2026 Ortizzz. <span id="text-rights">Todos los derechos reservados.</span><br>
-            <span id="text-license">Bajo licencia exclusiva de</span> <strong>Studio 42 Management</strong>.<br><br>
-            <a href="mailto:ceo@studio42.es">ceo@studio42.es</a>
-        </div>
-    </footer>
-
-    <!-- MODAL MULTIFUNCIÓN -->
-    <div id="imagenModal" onclick="cerrarModal(event)" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); justify-content: center; align-items: center; overflow-y: auto; padding: 20px; box-sizing: border-box; backdrop-filter: blur(10px);">
-        <span onclick="cerrarModalForzado()" style="position: fixed; top: 20px; right: 30px; color: var(--s42-rose); font-size: 40px; font-weight: bold; cursor: pointer; z-index: 10000;">&times;</span>
-        
-        <!-- VISTA A: IMAGEN SIMPLE (Para Feat) -->
-        <img id="imagenModalSrc" style="display: none; max-width: 90%; max-height: 85vh; border: 2px solid var(--s42-rose); border-radius: 8px; box-shadow: 0 0 30px rgba(253,29,83,0.5);">
-
-        <!-- VISTA B: FICHA TÉCNICA EXCLUSIVA CAMISETA DROP 001 -->
-        <div id="fichaCamiseta" style="display: none; max-width: 750px; width: 100%; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 30px; color: #ccc; font-size: 0.9rem; line-height: 1.6; margin: auto;">
-            <div style="text-align: center; margin-bottom: 25px; border-bottom: 1px solid var(--s42-rose); padding-bottom: 15px;">
-                <span style="color: var(--pistachio-neon); font-size: 0.8rem; letter-spacing: 4px; text-transform: uppercase;">Colaboración Exclusiva</span>
-                <h2 style="color: #fff; font-size: 1.8rem; margin: 5px 0 0 0; font-weight: 900; letter-spacing: 2px;">ORTIZZZ × NÓMADAS</h2>
-                <p style="color: var(--s42-rose); font-weight: bold; font-size: 1rem; margin-top: 5px;">DROP 001 — “CREO PARA TRASCENDER”</p>
-            </div>
-
-            <img id="modalCamisetaImg" src="" style="width: 100%; max-height: 350px; object-fit: cover; border-radius: 6px; margin-bottom: 25px; border: 1px solid #222;">
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 4px; border-left: 2px solid var(--pistachio-neon);">
-                    <h4 style="color: #fff; margin-top: 0; text-transform: uppercase; letter-spacing: 2px;">Concepto & Estética</h4>
-                    <p style="margin-bottom: 8px;"><strong>Inspiración:</strong> Wabi Sabi, Brutalismo, Streetwear japonés, Arte contemporáneo y Prendas envejecidas.</p>
-                    <p><strong>Silueta:</strong> Oversized Boxy Fit Premium (Hombro caído, bajo deshilachado, cuello de canalé 3cm y lavado vintage).</p>
-                </div>
-
-                <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 4px; border-left: 2px solid var(--s42-rose);">
-                    <h4 style="color: #fff; margin-top: 0; text-transform: uppercase; letter-spacing: 2px;">Tejido Élite</h4>
-                    <p style="margin-bottom: 8px;"><strong>Material:</strong> 100% Cotton Combed (Algodón Peinado / Compact / Pre-encogido).</p>
-                    <p><strong>Peso & Gramaje:</strong> 320–350 GSM (Caída pesada de lujo, ultra suave, no transparenta y conserva forma).</p>
-                </div>
-            </div>
-
-            <div style="margin-top: 20px; background: rgba(0,0,0,0.5); padding: 15px; border-radius: 4px; border: 1px dashed rgba(255,255,255,0.1);">
-                <h4 style="color: var(--pistachio-neon); margin-top: 0; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Detalles del Artista (Firma ORTIZZZ)</h4>
-                <ul style="padding-left: 20px; margin: 0; color: #aaa; font-size: 0.85rem;">
-                    <li>Logo NÓMADAS en bordado delantero de alta densidad.</li>
-                    <li>Texto ORTIZZZ con relieve sutil (Puff embroidery 2mm).</li>
-                    <li>Diseño central espalda con serigrafía al agua de tacto cero.</li>
-                    <li>Panel vertical central con costura exterior visible (Simbolizando el camino entre pasado y presente).</li>
-                    <li>Bajo ajustable con cordones ocultos y stopper negro mate.</li>
-                </ul>
-            </div>
-
-            <div style="margin-top: 25px;">
-                <h4 style="color: #fff; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; text-align: center; margin-bottom: 10px;">Guía de Tallas (Boxy Fit - Unidades en cm)</h4>
-                <div style="overflow-x: auto;">
-                    <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 0.8rem; color: #aaa; border: 1px solid #222;">
-                        <thead>
-                            <tr style="background: #111; color: #fff;">
-                                <th style="padding: 8px; border: 1px solid #222;">Talla</th>
-                                <th style="padding: 8px; border: 1px solid #222;">Ancho Pecho</th>
-                                <th style="padding: 8px; border: 1px solid #222;">Largo</th>
-                                <th style="padding: 8px; border: 1px solid #222;">Hombro</th>
-                                <th style="padding: 8px; border: 1px solid #222;">Sisa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td style="padding: 6px; border: 1px solid #222; font-weight: bold; color: var(--pistachio-neon);">XS</td><td>61 cm</td><td>66 cm</td><td>59 cm</td><td>28 cm</td></tr>
-                            <tr><td style="padding: 6px; border: 1px solid #222; font-weight: bold; color: var(--pistachio-neon);">S</td><td>63 cm</td><td>68 cm</td><td>61 cm</td><td>29 cm</td></tr>
-                            <tr><td style="padding: 6px; border: 1px solid #222; font-weight: bold; color: var(--pistachio-neon);">M</td><td>65 cm</td><td>70 cm</td><td>63 cm</td><td>30 cm</td></tr>
-                            <tr><td style="padding: 6px; border: 1px solid #222; font-weight: bold; color: var(--pistachio-neon);">L</td><td>67 cm</td><td>72 cm</td><td>65 cm</td><td>31 cm</td></tr>
-                            <tr><td style="padding: 6px; border: 1px solid #222; font-weight: bold; color: var(--pistachio-neon);">XL</td><td>69 cm</td><td>74 cm</td><td>67 cm</td><td>32 cm</td></tr>
-                            <tr><td style="padding: 6px; border: 1px solid #222; font-weight: bold; color: var(--pistachio-neon);">XXL</td><td>71 cm</td><td>76 cm</td><td>69 cm</td><td>33 cm</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 30px;">
-                <img src="firma-ortizzz.png" alt="Firma Ortizzz" style="width: 150px; display: block; margin: 0 auto 20px auto; opacity: 0.8;">
-                <a href="https://wa.me/34641607302?text=Hola%20ORTIIZZZ,%20quiero%20reservar%20la%20Camiseta%20Drop%20001%20Ortizzz%20x%20Nomadas" target="_blank" class="btn btn-store" style="display: inline-block; width: auto; padding: 15px 30px; font-size: 0.85rem;">Reservar Drop 001 (25,00 €)</a>
-            </div>
-        </div>
-
-        <!-- VISTA C: DESPLIEGUE VIP SMART CARD NFC -->
-        <div id="fichaNFC" style="display: none; max-width: 700px; width: 100%; background: #0a0a0a; border: 1px solid rgba(204,255,0,0.2); border-radius: 8px; padding: 30px; color: #ccc; font-size: 0.9rem; line-height: 1.6; margin: auto;">
-            <div style="text-align: center; margin-bottom: 25px; border-bottom: 1px solid var(--pistachio-neon); padding-bottom: 15px;">
-                <span style="color: var(--s42-rose); font-size: 0.8rem; letter-spacing: 4px; text-transform: uppercase; font-weight: bold;">Acceso Físico + Digital</span>
-                <h2 style="color: #fff; font-size: 1.8rem; margin: 5px 0 0 0; font-weight: 900; letter-spacing: 2px;">SMART CARD NFC VIP</h2>
-                <p style="color: var(--pistachio-neon); font-weight: bold; font-size: 0.95rem; margin-top: 5px;">Tu Pasaporte Oficial a la New Era de Ortizzz</p>
-            </div>
-
-            <img id="modalNfcImg" src="" style="width: 100%; max-height: 280px; object-fit: cover; border-radius: 6px; margin-bottom: 25px; border: 1px solid #222;">
-
-            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 6px; border-left: 3px solid var(--pistachio-neon); margin-bottom: 20px;">
-                <h4 style="color: #fff; margin-top: 0; text-transform: uppercase; letter-spacing: 2px;">⚡ ¿Cómo funciona la magia?</h4>
-                <p style="margin: 0; color: #bbb;">No necesita batería ni aplicaciones extrañas. Solo <strong>acerca tu teléfono móvil a la tarjeta</strong> y en 1 segundo se abrirá tu portal privado sin tener que teclear nada.</p>
-            </div>
-
-            <h4 style="color: #fff; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 15px; text-align: center;">🔥 Lo que te da esta tarjeta (Beneficios Exclusivos)</h4>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px;">
-                <div style="background: #111; padding: 15px; border-radius: 4px; border: 1px solid #222;">
-                    <span style="font-size: 1.3rem;">🎵</span> <strong style="color: #fff;">Música Inédita & Maquetas</strong>
-                    <p style="margin: 5px 0 0 0; font-size: 0.8rem; color: #888;">Escucha temas antes de su estreno en Spotify y adelantos exclusivos de estudio.</p>
-                </div>
-
-                <div style="background: #111; padding: 15px; border-radius: 4px; border: 1px solid #222;">
-                    <span style="font-size: 1.3rem;">🎟️</span> <strong style="color: #fff;">Acceso Prioritario (Early Bird)</strong>
-                    <p style="margin: 5px 0 0 0; font-size: 0.8rem; color: #888;">Reserva de entradas para shows privados y eventos antes de que salgan al público general.</p>
-                </div>
-
-                <div style="background: #111; padding: 15px; border-radius: 4px; border: 1px solid #222;">
-                    <span style="font-size: 1.3rem;">👕</span> <strong style="color: #fff;">Descuentos en Drops</strong>
-                    <p style="margin: 5px 0 0 0; font-size: 0.8rem; color: #888;">Precios VIP especiales para las colecciones de ropa como Ortizzz × Nómadas.</p>
-                </div>
-
-                <div style="background: #111; padding: 15px; border-radius: 4px; border: 1px solid #222;">
-                    <span style="font-size: 1.3rem;">🔄</span> <strong style="color: #fff;">Contenido Cambiante</strong>
-                    <p style="margin: 5px 0 0 0; font-size: 0.8rem; color: #888;">La tarjeta es la misma, pero el contenido se actualiza constantemente con nuevas sorpresas.</p>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="https://wa.me/34641607302?text=Hola%20ORTIIZZZ,%20quiero%20pedir%20mi%20Smart%20Card%20NFC%20VIP" target="_blank" class="btn btn-store" style="display: inline-block; width: auto; padding: 15px 35px; font-size: 0.85rem;">Conseguir mi Tarjeta VIP (15,00 €)</a>
-            </div>
-        </div>
-
+<section id="musica">
+  <div class="w grid2">
+    <div class="rv">
+      <span class="eti" data-i="eMusica">Último lanzamiento</span>
+      <h2 id="relTitulo">—</h2>
+      <p class="mut" id="relTexto"></p>
+      <div class="plataformas" id="plataformas"></div>
     </div>
+    <div class="rv"><div class="video" id="video"></div></div>
+  </div>
+  <div class="w" id="otrosWrap" style="margin-top:34px" hidden>
+    <span class="eti" data-i="eMas">Más vídeos</span>
+    <div class="tienda" id="otros" style="margin-top:14px"></div>
+  </div>
+</section>
 
-    <script src="https://www.youtube.com/iframe_api"></script>
+<section id="bio">
+  <div class="w grid2">
+    <div class="rv">
+      <span class="eti" data-i="eBio">El proyecto</span>
+      <h2 data-i="tBio">Autodidacta, versátil y con historia</h2>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-b="corta" aria-selected="true" data-i="bCorta">Corta</button>
+        <button type="button" role="tab" data-b="larga" aria-selected="false" data-i="bLarga">Completa</button>
+        <button type="button" class="pill" id="bCopiar" data-i="bCopiar">Copiar bio</button>
+      </div>
+      <div class="bio" id="bioTxt"></div>
+      <div class="datos" id="datos"></div>
+    </div>
+    <div class="rv"><img class="retrato" src="img/retrato.webp" alt="Retrato de ORTIZZZ" loading="lazy" width="1400" height="1051"></div>
+  </div>
+</section>
 
-    <script>
-        const bgAudio = document.getElementById("bg-audio");
-        const overlay = document.getElementById("overlay-entrada");
+<section id="booking">
+  <div class="w">
+    <div class="rv">
+      <span class="eti">Booking</span>
+      <h2 data-i="tBooking">Llévalo a tu escenario</h2>
+      <p class="mut" data-i="pBooking" style="max-width:640px">Fiestas, salas, festivales, eventos de marca o tu propia canción. Cuéntanos qué necesitas y te respondemos con disponibilidad y presupuesto.</p>
+    </div>
+    <div class="formatos rv" id="formatos"></div>
+    <form class="book rv" id="fBook" novalidate>
+      <div><label for="bNombre" data-i="lNombre">Tu nombre y empresa</label><input id="bNombre" required autocomplete="name"></div>
+      <div><label for="bTipo" data-i="lTipo">Qué buscas</label><select id="bTipo"></select></div>
+      <div><label for="bFecha" data-i="lFecha">Fecha</label><input id="bFecha" type="date"></div>
+      <div><label for="bCiudad" data-i="lCiudad">Ciudad y sala</label><input id="bCiudad"></div>
+      <div><label for="bAforo" data-i="lAforo">Aforo aproximado</label><input id="bAforo" inputmode="numeric"></div>
+      <div><label for="bPresu" data-i="lPresu">Presupuesto orientativo</label><select id="bPresu"></select></div>
+      <div class="full"><label for="bMsg" data-i="lMsg">Algo más</label><textarea id="bMsg"></textarea></div>
+      <div class="full envio">
+        <button class="btn rose" type="button" id="bEnviarWa"><svg><use href="#i-wa"/></svg><span data-i="eWa">Enviar por WhatsApp</span></button>
+        <button class="btn" type="button" id="bEnviarMail"><svg><use href="#i-mail"/></svg><span data-i="eMail">Enviar por email</span></button>
+      </div>
+    </form>
+  </div>
+</section>
 
-        function iniciarExperiencia() {
-            overlay.style.opacity = '0';
-            setTimeout(() => { overlay.style.display = 'none'; }, 800);
-            bgAudio.volume = 0.4;
-            bgAudio.play().then(() => {
-                document.getElementById("btn-audio-toggle").style.display = "block";
-            }).catch(error => console.log("El navegador bloqueó el audio."));
-        }
+<section id="fechas">
+  <div class="w rv">
+    <span class="eti" data-i="eFechas">En directo</span>
+    <h2 data-i="tFechas">Próximas fechas</h2>
+    <div class="fechas" id="listaFechas"></div>
+  </div>
+</section>
 
-        function toggleAudio() {
-            const audioBtnText = document.getElementById("audio-status");
-            if (bgAudio.paused) {
-                bgAudio.play();
-                audioBtnText.innerText = "🔊 Sound ON";
-            } else {
-                bgAudio.pause();
-                audioBtnText.innerText = "🔇 Mute";
-            }
-        }
+<section id="tienda">
+  <div class="w">
+    <div class="rv"><span class="eti" data-i="eTienda">Tienda</span><h2 data-i="tTienda">Merch y New Era Club</h2></div>
+    <div class="tienda rv" id="productos"></div>
+  </div>
+</section>
 
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('youtube-player', {
-                events: { 'onStateChange': onPlayerStateChange }
-            });
-        }
+<section id="prensa">
+  <div class="w">
+    <div class="rv">
+      <span class="eti" data-i="ePrensa">Prensa y promotores</span>
+      <h2 data-i="tPrensa">Kit de prensa</h2>
+      <p class="mut" data-i="pPrensa" style="max-width:640px">Fotos oficiales en alta resolución, libres para usar en carteles y notas de prensa citando al artista.</p>
+    </div>
+    <div class="prensa rv" id="fotosPrensa"></div>
+  </div>
+</section>
 
-        function onPlayerStateChange(event) {
-            if (event.data == YT.PlayerState.PLAYING) {
-                bgAudio.pause();
-                document.getElementById("audio-status").innerText = "🔇 Mute";
-            }
-        }
+<section id="contacto" class="contacto">
+  <div class="w rv">
+    <span class="eti">Management</span>
+    <h2>Studio 42</h2>
+    <p class="mut" data-i="pContacto">Representación, booking y colaboraciones.</p>
+    <div class="ctas" style="justify-content:center;margin-top:18px">
+      <a class="btn rose" id="cWa" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+      <a class="btn" id="cMail"><svg><use href="#i-mail"/></svg><span id="cMailTxt"></span></a>
+    </div>
+  </div>
+</section>
+</main>
 
-        const translations = {
-            es: {
-                subtitle: "Welcome to the <span>New Era</span>",
-                btnSpotify: "Spotify",
-                btnVideo: "Videoclip Oficial",
-                btnTickets: "Entradas & Shows",
-                btnStore: "Tienda & Merch",
-                btnContact: "Booking & Contacto",
-                titleProject: "El Proyecto",
-                bioP1: "Nacido en Venezuela, <strong>Ortizzz</strong> descubrió en la música su mayor refugio y su voz más honesta. A los 18 años tomó la decisión de cruzar el océano para establecerse en España, enfrentándose de golpe a la crudeza de empezar desde cero. Lejos de su tierra, el complejo y a menudo solitario escenario de la inmigración se convirtió en una dura prueba de supervivencia. Sin embargo, en medio de la lucha por mantenerse firme y cumplir sus metas, esa misma adversidad forjó en él un carácter inquebrantable que hoy define la profundidad de sus letras.",
-                bioP2: "Músico cien por ciento autodidacta y un apasionado de transmitir emociones genuinas, encontró en las cuerdas de su guitarra y en los ritmos urbanos la herramienta perfecta para contar su historia. Su propuesta sonora nace de la fusión entre el dancehall, el afro y el reggaetón, géneros que interpreta con una identidad propia, fresca y reconocible. Pero su esencia no entiende de etiquetas: Ortizzz posee una versatilidad que le permite transitar con naturalidad por cualquier estilo musical, desde una producción de alta energía hasta una balada a guitarra limpia, sin perder nunca el sello que lo distingue.",
-                bioP3: "A pesar de los obstáculos y las malas experiencias, su determinación por hacer lo que le apasiona nunca se ha detenido. Hoy, en su <strong>New Era</strong>, Ortizzz no solo canta; convierte cada experiencia en música y cada desafío en una declaración de resiliencia. Respaldado por una dirección creativa integral y una visión artística sólida, su proyecto es un testimonio de autenticidad absoluta. Ortizzz no persigue las tendencias de la industria; las transforma y les imprime su propia identidad.",
-                titleVisuals: "Visuales",
-                titleTickets: "Live & Tickets",
-                titleStore: "Merch & Servicios",
-                titleContact: "Booking & Management",
-                textRights: "Todos los derechos reservados.",
-                textLicense: "Bajo licencia exclusiva de"
-            },
-            en: {
-                subtitle: "Welcome to the <span>New Era</span>",
-                btnSpotify: "Spotify",
-                btnVideo: "Official Music Video",
-                btnTickets: "Tickets & Shows",
-                btnStore: "Shop & Merch",
-                btnContact: "Booking & Contact",
-                titleProject: "The Project",
-                bioP1: "Born in Venezuela, <strong>Ortizzz</strong> discovered in music his greatest refuge and his most honest voice. At 18, he made the decision to cross the ocean to settle in Spain, suddenly facing the harsh reality of starting from scratch. Far from his homeland, the complex and often lonely scenario of immigration became a tough test of survival. However, in the midst of the struggle to stay strong and achieve his goals, that same adversity forged in him an unbreakable character that today defines the depth of his lyrics.",
-                bioP2: "A 100% self-taught musician and passionate about transmitting genuine emotions, he found in the strings of his guitar and urban rhythms the perfect tool to tell his story. His sound proposal is born from the fusion of dancehall, afro, and reggaeton, genres he interprets with his own fresh and recognizable identity. But his essence knows no labels: Ortizzz possesses a versatility that allows him to transition naturally through any musical style, from a high-energy production to a clean acoustic guitar ballad, without ever losing his distinguishing mark.",
-                bioP3: "Despite the obstacles and bad experiences, his determination to do what he is passionate about has never stopped. Today, in his <strong>New Era</strong>, Ortizzz doesn't just sing; he turns every experience into music and every challenge into a declaration of resilience. Backed by comprehensive creative direction and a solid artistic vision, his project is a testament to absolute authenticity. Ortizzz doesn't chase industry trends; he transforms them and stamps them with his own identity.",
-                titleVisuals: "Visuals",
-                titleTickets: "Live & Tickets",
-                titleStore: "Merch & Services",
-                titleContact: "Booking & Management",
-                textRights: "All rights reserved.",
-                textLicense: "Under exclusive license of"
-            },
-            fr: {
-                subtitle: "Bienvenue dans la <span>New Era</span>",
-                btnSpotify: "Spotify",
-                btnVideo: "Clip Officiel",
-                btnTickets: "Billets & Concerts",
-                btnStore: "Boutique & Merch",
-                btnContact: "Booking & Contact",
-                titleProject: "Le Projet",
-                bioP1: "Né au Venezuela, <strong>Ortizzz</strong> a découvert dans la musique son plus grand refuge et sa voix la plus honnête. À 18 ans, il a pris la décision de traverser l'océan pour s'installer en Espagne, offrant soudainement la dure réalité de repartir à zéro. Loin de sa terre natale, le scénario complexe et souvent solitaire de l'immigration est devenu une dure épreuve de survie. Cependant, au milieu de la lutte pour rester fort et atteindre ses objectifs, cette même adversité a forgé en lui un caractère inébranlable qui définit aujourd'hui la profondeur de ses textes.",
-                bioP2: "Musicien 100% autodidacte et passionné par la transmission d'émotions authentiques, il a trouvé dans les cordes de sa guitare et les rythmes urbains l'outil parfait pour raconter son histoire. Sa proposition sonore naît de la fusion entre le dancehall, l'afro et le reggaeton, des genres qu'il interprète avec une identité propre, fraîche et reconnaissable. Mais son essence ne connaît pas d'étiquettes : Ortizzz possède une polyvalence qui lui permet de naviguer naturally à travers n'importe quel style musical, d'une production à haute énergie à une ballade acoustique, sans jamais perdre la marque qui le distingue.",
-                bioP3: "Malgré les obstacles et les mauvaises experiences, sa determination à faire ce qui le passionne ne s'est jamais arrêtée. Aujourd'hui, dans sa <strong>New Era</strong>, Ortizzz ne fait pas que chanter ; il transforme chaque expérience en musique et chaque défi en une déclaration de résilience. Soutenu par une direction créative intégrale et une vision artistique solide, son projet est un témoignage d'authenticité absolute. Ortizzz ne court pas après les tendances de l'industrie ; il les transforme et leur imprime sa propre identité.",
-                titleVisuals: "Visuels",
-                titleTickets: "Live & Billets",
-                titleStore: "Merch & Services",
-                titleContact: "Booking & Management",
-                textRights: "Tous droits réservés.",
-                textLicense: "Sous licence exclusive de"
-            }
-        };
+<footer>
+  <div class="w">© <span id="anio"></span> ORTIZZZ · <span data-i="fDerechos">Todos los derechos reservados</span> · Management: Studio 42<br>
+  <a href="#" id="bCookies" data-i="fCookies">Preferencias de cookies</a></div>
+</footer>
 
-        function changeLanguage(lang) {
-            const data = translations[lang];
-            document.getElementById('sub-title').innerHTML = data.subtitle;
-            document.getElementById('btn-spotify').innerText = data.btnSpotify;
-            document.getElementById('btn-video').innerText = data.btnVideo;
-            document.getElementById('btn-tickets').innerText = data.btnTickets;
-            document.getElementById('btn-store').innerText = data.btnStore;
-            document.getElementById('btn-contact').innerText = data.btnContact;
-            document.getElementById('title-project').innerText = data.titleProject;
-            document.getElementById('bio-p1').innerHTML = data.bioP1;
-            document.getElementById('bio-p2').innerHTML = data.bioP2;
-            document.getElementById('bio-p3').innerHTML = data.bioP3; 
-            document.getElementById('title-visuals').innerText = data.titleVisuals;
-            document.getElementById('title-tickets').innerText = data.titleTickets;
-            document.getElementById('title-store').innerText = data.titleStore;
-            document.getElementById('title-contact').innerText = data.titleContact;
-            document.getElementById('text-rights').innerText = data.textRights;
-            document.getElementById('text-license').innerText = data.textLicense;
-        }
+<div class="player" id="player">
+  <button type="button" id="bPlay" aria-label="Reproducir adelanto"><svg><use id="uPlay" href="#i-play"/></svg></button>
+  <span data-i="adelanto">Adelanto</span><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+</div>
+<audio id="audio" preload="none" loop><source src="track-fondo.mp3" type="audio/mpeg"></audio>
 
-        /* LÓGICA DE MODAL INTELIGENTE MULTIFUNCIÓN */
-        function abrirModal(src) {
-            document.getElementById("fichaCamiseta").style.display = "none";
-            document.getElementById("fichaNFC").style.display = "none";
-            document.getElementById("imagenModalSrc").src = src;
-            document.getElementById("imagenModalSrc").style.display = "block";
-            document.getElementById("imagenModal").style.display = "flex";
-        }
+<div class="cookies" id="cookies" hidden>
+  <p data-i="cookiesTxt">Usamos Google Analytics para saber cuánta gente visita la web. Solo se activa si aceptas.</p>
+  <button class="btn lime" type="button" id="ckSi" data-i="ckSi">Aceptar</button>
+  <button class="btn" type="button" id="ckNo" data-i="ckNo">Rechazar</button>
+</div>
 
-        function abrirModalCamiseta(src) {
-            document.getElementById("imagenModalSrc").style.display = "none";
-            document.getElementById("fichaNFC").style.display = "none";
-            document.getElementById("modalCamisetaImg").src = src;
-            document.getElementById("fichaCamiseta").style.display = "block";
-            document.getElementById("imagenModal").style.display = "flex";
-        }
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true">
+  <button class="x" type="button" id="mX" aria-label="Cerrar">×</button>
+  <div class="caja" id="mCaja"></div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
 
-        function abrirModalNFC(src) {
-            document.getElementById("imagenModalSrc").style.display = "none";
-            document.getElementById("fichaCamiseta").style.display = "none";
-            document.getElementById("modalNfcImg").src = src;
-            document.getElementById("fichaNFC").style.display = "block";
-            document.getElementById("imagenModal").style.display = "flex";
-        }
+<script>
+/* =====================================================================
+   CONFIGURACIÓN · todo lo editable de ORTIZZZ está aquí.
+   Lo que esté vacío ("" o []) no se muestra en la web.
+   ===================================================================== */
+const CONFIG = {
+  ga: "G-E5RS6D7T0V",                       // Google Analytics (solo con consentimiento)
+  whatsapp: "34641607302",
+  email: "ceo@studio42.es",
+  redes: {
+    instagram: "https://instagram.com/ortiizzzp/",
+    tiktok: "https://tiktok.com/@ortizzzviejo",
+    youtube: "https://youtube.com/@Ortizzzp",
+    spotify: ""                              // PENDIENTE: enlace del perfil de artista (open.spotify.com/artist/...)
+  },
+  /* Lanzamientos: el primero es el destacado. youtube = el código del vídeo. */
+  lanzamientos: [
+    { titulo: "Placata", tipo: "Videoclip oficial", youtube: "4VrczY2Axac", spotify: "", apple: "" }
+  ],
+  /* Cifras para promotores. Solo se muestran las que tengan valor. */
+  datos: [
+    { valor: "", es: "Oyentes mensuales en Spotify", en: "Spotify monthly listeners" },
+    { valor: "", es: "Seguidores en Instagram", en: "Instagram followers" },
+    { valor: "", es: "Shows en directo", en: "Live shows" },
+    { valor: "ES · VE", es: "Mercados", en: "Markets" }
+  ],
+  /* Próximas fechas: { fecha: "2026-11-21", ciudad: "Logroño", sala: "…", entradas: "https://…" } */
+  fechas: [],
+  fotosPrensa: [
+    { archivo: "prensa/ortizzz-prensa-1.jpg", vista: "img/hero.webp", es: "Foto oficial 1 · horizontal", en: "Official photo 1 · landscape" },
+    { archivo: "prensa/ortizzz-prensa-2.jpg", vista: "img/retrato.webp", es: "Foto oficial 2 · retrato", en: "Official photo 2 · portrait" }
+  ]
+};
 
-        function cerrarModal(event) {
-            if (event.target.id === "imagenModal") {
-                document.getElementById("imagenModal").style.display = "none";
-            }
-        }
+const FORMATOS = [
+  { id: "show", es: ["Show urbano", "Voz en directo sobre pistas: dancehall, afro y reggaetón. Ideal para salas, fiestas y festivales."], en: ["Urban show", "Live vocals over tracks: dancehall, afro and reggaeton. For clubs, parties and festivals."] },
+  { id: "acustico", es: ["Acústico", "Voz y guitarra. Para eventos íntimos, marcas, bodas y presentaciones."], en: ["Acoustic", "Voice and guitar. For intimate events, brands, weddings and launches."] },
+  { id: "feat", es: ["Feat y estribillos", "Colaboración en tu tema: estribillo, verso o composición."], en: ["Features & hooks", "Collaboration on your track: hook, verse or songwriting."] }
+];
+const PRESUPUESTOS = { es: ["A consultar", "Menos de 300 €", "300–800 €", "800–1.500 €", "Más de 1.500 €"], en: ["To discuss", "Under €300", "€300–800", "€800–1,500", "Over €1,500"] };
 
-        function cerrarModalForzado() {
-            document.getElementById("imagenModal").style.display = "none";
-        }
+const PRODUCTOS = [
+  { id: "drop001", img: "img/drop001.webp", precio: "25 €", es: { tag: "Drop 001", t: "ORTIZZZ × Nómadas", d: "Boxy fit 320–350 g/m² · edición limitada", b: "Ver ficha y tallas" }, en: { tag: "Drop 001", t: "ORTIZZZ × Nómadas", d: "Boxy fit 320–350 gsm · limited edition", b: "Specs & sizes" } },
+  { id: "vip", img: "img/vip-card.webp", precio: "15 €", es: { tag: "New Era Club", t: "Smart Card NFC VIP", d: "Tu pase físico: acércala al móvil y entras al club", b: "Ver beneficios" }, en: { tag: "New Era Club", t: "NFC VIP Smart Card", d: "Your physical pass: tap it and you're in the club", b: "See perks" } }
+];
 
-        document.addEventListener("DOMContentLoaded", function() {
-            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+/* Textos en dos idiomas */
+const T = {
+  es: {
+    nMusica: "Música", nBio: "Bio", nBooking: "Booking", nTienda: "Tienda", nPrensa: "Prensa", contratar: "Contratar",
+    kicker: "New Era · Dancehall · Afro · Reggaetón", lead: "Voz y guitarra propia. De Venezuela a España, convierte cada golpe en música.",
+    ctaEscuchar: "Escuchar", ctaContratar: "Contratar un show", eMusica: "Último lanzamiento", eMas: "Más vídeos",
+    eBio: "El proyecto", tBio: "Autodidacta, versátil y con historia", bCorta: "Corta", bLarga: "Completa", bCopiar: "Copiar bio",
+    tBooking: "Llévalo a tu escenario", pBooking: "Fiestas, salas, festivales, eventos de marca o tu propia canción. Cuéntanos qué necesitas y te respondemos con disponibilidad y presupuesto.",
+    lNombre: "Tu nombre y empresa", lTipo: "Qué buscas", lFecha: "Fecha", lCiudad: "Ciudad y sala", lAforo: "Aforo aproximado", lPresu: "Presupuesto orientativo", lMsg: "Algo más",
+    eWa: "Enviar por WhatsApp", eMail: "Enviar por email", eFechas: "En directo", tFechas: "Próximas fechas",
+    sinFechas: "Ahora mismo no hay fechas anunciadas.", sinFechas2: "Contrátalo para tu evento", entradas: "Entradas",
+    eTienda: "Tienda", tTienda: "Merch y New Era Club", ePrensa: "Prensa y promotores", tPrensa: "Kit de prensa",
+    pPrensa: "Fotos oficiales en alta resolución, libres para usar en carteles y notas de prensa citando al artista.", descargar: "Descargar",
+    pContacto: "Representación, booking y colaboraciones.", fDerechos: "Todos los derechos reservados", fCookies: "Preferencias de cookies",
+    adelanto: "Adelanto", cookiesTxt: "Usamos Google Analytics para saber cuánta gente visita la web. Solo se activa si aceptas.", ckSi: "Aceptar", ckNo: "Rechazar",
+    copiado: "Bio copiada", faltaNombre: "Escribe tu nombre para que podamos responderte", verVideo: "Ver vídeo", escucharEn: "Escuchar en",
+    loQuiero: "Lo quiero", talla: "Talla", reservar: "Reservar por WhatsApp", conseguir: "Conseguir mi tarjeta",
+    bio: {
+      corta: ["<strong>ORTIZZZ</strong> es un artista urbano venezolano afincado en España. Autodidacta, con voz y guitarra propia, fusiona dancehall, afro y reggaetón y salta con naturalidad de un tema de alta energía a una balada acústica. Su <strong>New Era</strong> convierte una historia de migración y resiliencia en música con identidad."],
+      larga: [
+        "Nacido en Venezuela, <strong>ORTIZZZ</strong> encontró en la música su refugio y su voz más honesta. A los 18 años cruzó el océano para establecerse en España y empezar desde cero. La soledad y la dureza de la migración se convirtieron en una prueba de supervivencia que forjó un carácter inquebrantable, y hoy esa experiencia es la que da profundidad a sus letras.",
+        "Músico cien por cien autodidacta, encontró en su guitarra y en los ritmos urbanos la herramienta para contar su historia. Su sonido nace de la fusión entre el dancehall, el afro y el reggaetón, con una identidad fresca y reconocible. Su versatilidad le permite pasar de una producción de alta energía a una balada a guitarra limpia sin perder su sello.",
+        "En su <strong>New Era</strong>, ORTIZZZ no solo canta: convierte cada experiencia en música y cada desafío en una declaración de resiliencia. Con una dirección creativa integral detrás, su proyecto es un ejercicio de autenticidad que no persigue tendencias, sino que las hace suyas."
+      ]
+    }
+  },
+  en: {
+    nMusica: "Music", nBio: "Bio", nBooking: "Booking", nTienda: "Shop", nPrensa: "Press", contratar: "Book now",
+    kicker: "New Era · Dancehall · Afro · Reggaeton", lead: "His own voice and guitar. From Venezuela to Spain, he turns every hit into music.",
+    ctaEscuchar: "Listen", ctaContratar: "Book a show", eMusica: "Latest release", eMas: "More videos",
+    eBio: "The project", tBio: "Self-taught, versatile and with a story", bCorta: "Short", bLarga: "Full", bCopiar: "Copy bio",
+    tBooking: "Bring him to your stage", pBooking: "Parties, clubs, festivals, brand events or your own song. Tell us what you need and we'll reply with availability and a quote.",
+    lNombre: "Your name and company", lTipo: "What you need", lFecha: "Date", lCiudad: "City and venue", lAforo: "Approx. capacity", lPresu: "Approx. budget", lMsg: "Anything else",
+    eWa: "Send via WhatsApp", eMail: "Send via email", eFechas: "Live", tFechas: "Upcoming dates",
+    sinFechas: "No dates announced right now.", sinFechas2: "Book him for your event", entradas: "Tickets",
+    eTienda: "Shop", tTienda: "Merch & New Era Club", ePrensa: "Press & promoters", tPrensa: "Press kit",
+    pPrensa: "Official high-resolution photos, free to use in posters and press releases crediting the artist.", descargar: "Download",
+    pContacto: "Management, booking and collaborations.", fDerechos: "All rights reserved", fCookies: "Cookie preferences",
+    adelanto: "Preview", cookiesTxt: "We use Google Analytics to count visits. It only runs if you accept.", ckSi: "Accept", ckNo: "Decline",
+    copiado: "Bio copied", faltaNombre: "Add your name so we can reply", verVideo: "Watch video", escucharEn: "Listen on",
+    loQuiero: "I want it", talla: "Size", reservar: "Reserve on WhatsApp", conseguir: "Get my card",
+    bio: {
+      corta: ["<strong>ORTIZZZ</strong> is a Venezuelan urban artist based in Spain. Self-taught, with his own voice and guitar, he blends dancehall, afro and reggaeton and moves naturally from high-energy tracks to acoustic ballads. His <strong>New Era</strong> turns a story of migration and resilience into music with identity."],
+      larga: [
+        "Born in Venezuela, <strong>ORTIZZZ</strong> found in music his refuge and his most honest voice. At 18 he crossed the ocean to settle in Spain and start from scratch. The loneliness and hardship of migration became a test of survival that forged an unbreakable character, and that experience is what gives his lyrics their depth today.",
+        "A fully self-taught musician, he found in his guitar and in urban rhythms the tool to tell his story. His sound blends dancehall, afro and reggaeton with a fresh, recognisable identity. His versatility lets him move from high-energy productions to a clean guitar ballad without losing his signature.",
+        "In his <strong>New Era</strong>, ORTIZZZ doesn't just sing: he turns every experience into music and every challenge into a statement of resilience. Backed by full creative direction, his project is an exercise in authenticity that doesn't chase trends but makes them his own."
+      ]
+    }
+  }
+};
 
-            const fadeElements = document.querySelectorAll('.fade-up');
-            fadeElements.forEach(el => observer.observe(el));
-            
-            setTimeout(() => {
-                document.querySelector('.hero-content').classList.add('visible');
-            }, 50);
-        });
-    </script>
+/* ===================================================================== */
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
+const guardar = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+let lang = (guardar.get("oz_lang") || (navigator.language || "es")).slice(0, 2) === "en" ? "en" : "es";
+let bioModo = "corta";
+const t = (k) => T[lang][k] || T.es[k] || k;
+function toast(m) { const e = $("toast"); e.textContent = m; e.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => e.classList.remove("on"), 2400); }
+function evento(nombre, extra) { if (window.gtag) window.gtag("event", nombre, extra || {}); }
+const waURL = (texto) => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(texto);
+
+/* ---------- Redes y plataformas ---------- */
+function pintarRedes() {
+  const r = CONFIG.redes, items = [["instagram", "i-ig", "Instagram"], ["tiktok", "i-tt", "TikTok"], ["youtube", "i-yt", "YouTube"], ["spotify", "i-sp", "Spotify"]];
+  $("redes").innerHTML = items.filter((x) => r[x[0]]).map((x) => '<a href="' + esc(r[x[0]]) + '" target="_blank" rel="noopener" aria-label="' + x[2] + '"><svg><use href="#' + x[1] + '"/></svg></a>').join("");
+}
+
+/* ---------- Lanzamientos (vídeo que solo carga al pulsar) ---------- */
+function pintarMusica() {
+  const L = CONFIG.lanzamientos, top = L[0];
+  if (!top) { $("musica").hidden = true; return; }
+  $("relTitulo").textContent = top.titulo;
+  $("relTexto").textContent = top.tipo;
+  const plat = [["spotify", "Spotify", top.spotify || CONFIG.redes.spotify], ["apple", "Apple Music", top.apple], ["youtube", "YouTube", top.youtube ? "https://youtu.be/" + top.youtube : ""]];
+  $("plataformas").innerHTML = plat.filter((p) => p[2]).map((p) => '<a class="btn" href="' + esc(p[2]) + '" target="_blank" rel="noopener">' + t("escucharEn") + " " + p[1] + "</a>").join("");
+  montarVideo($("video"), top);
+  const otros = L.slice(1).filter((x) => x.youtube);
+  $("otrosWrap").hidden = !otros.length;
+  $("otros").innerHTML = otros.map((x, i) => '<div class="video" data-o="' + (i + 1) + '"></div>').join("");
+  $("otros").querySelectorAll("[data-o]").forEach((el) => montarVideo(el, L[+el.dataset.o]));
+}
+function montarVideo(el, rel) {
+  el.style.backgroundImage = "url(https://i.ytimg.com/vi/" + rel.youtube + "/hqdefault.jpg)";
+  el.innerHTML = '<button type="button" aria-label="' + t("verVideo") + ": " + esc(rel.titulo) + '"><span class="play"><svg><use href="#i-play"/></svg></span><b>' + esc(rel.titulo) + "</b></button>";
+  el.querySelector("button").addEventListener("click", () => {
+    pararAudio();
+    el.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(rel.youtube) + '?autoplay=1&rel=0&playsinline=1" title="' + esc(rel.titulo) + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+    evento("ver_video", { video: rel.titulo });
+  });
+}
+
+/* ---------- Bio ---------- */
+function pintarBio() {
+  $("bioTxt").innerHTML = T[lang].bio[bioModo].map((p) => "<p>" + p + "</p>").join("");
+  document.querySelectorAll("[data-b]").forEach((b) => b.setAttribute("aria-selected", b.dataset.b === bioModo ? "true" : "false"));
+  const d = CONFIG.datos.filter((x) => x.valor);
+  $("datos").innerHTML = d.map((x) => "<div class=\"dato\"><b>" + esc(x.valor) + "</b><span>" + esc(x[lang]) + "</span></div>").join("");
+}
+document.querySelectorAll("[data-b]").forEach((b) => b.addEventListener("click", () => { bioModo = b.dataset.b; pintarBio(); }));
+$("bCopiar").addEventListener("click", async () => {
+  const txt = $("bioTxt").innerText;
+  try { await navigator.clipboard.writeText(txt); toast(t("copiado")); } catch (e) { toast(txt.slice(0, 60) + "…"); }
+  evento("copiar_bio", { version: bioModo });
+});
+
+/* ---------- Booking ---------- */
+function pintarBooking() {
+  $("formatos").innerHTML = FORMATOS.map((f) => '<div class="formato"><h3>' + esc(f[lang][0]) + "</h3><p>" + esc(f[lang][1]) + "</p></div>").join("");
+  const sel = $("bTipo").value;
+  $("bTipo").innerHTML = FORMATOS.map((f) => '<option value="' + f.id + '">' + esc(f[lang][0]) + "</option>").join("");
+  if (sel) $("bTipo").value = sel;
+  const ps = $("bPresu").selectedIndex;
+  $("bPresu").innerHTML = PRESUPUESTOS[lang].map((p) => "<option>" + esc(p) + "</option>").join("");
+  if (ps > 0) $("bPresu").selectedIndex = ps;
+}
+function textoBooking() {
+  const f = FORMATOS.find((x) => x.id === $("bTipo").value) || FORMATOS[0];
+  const lineas = [
+    "Hola Studio 42, quiero contratar a ORTIZZZ.",
+    "· Nombre: " + $("bNombre").value.trim(),
+    "· Formato: " + f.es[0],
+    $("bFecha").value ? "· Fecha: " + $("bFecha").value : "",
+    $("bCiudad").value.trim() ? "· Ciudad y sala: " + $("bCiudad").value.trim() : "",
+    $("bAforo").value.trim() ? "· Aforo: " + $("bAforo").value.trim() : "",
+    "· Presupuesto: " + PRESUPUESTOS.es[$("bPresu").selectedIndex],
+    $("bMsg").value.trim() ? "· Notas: " + $("bMsg").value.trim() : ""
+  ];
+  return lineas.filter(Boolean).join("\n");
+}
+function validar() { if ($("bNombre").value.trim()) return true; toast(t("faltaNombre")); $("bNombre").focus(); return false; }
+$("bEnviarWa").addEventListener("click", () => { if (!validar()) return; evento("booking", { canal: "whatsapp", formato: $("bTipo").value }); window.open(waURL(textoBooking()), "_blank", "noopener"); });
+$("bEnviarMail").addEventListener("click", () => { if (!validar()) return; evento("booking", { canal: "email", formato: $("bTipo").value }); location.href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent("Booking ORTIZZZ · " + $("bNombre").value.trim()) + "&body=" + encodeURIComponent(textoBooking()); });
+
+/* ---------- Fechas ---------- */
+function pintarFechas() {
+  const hoy = new Date().toISOString().slice(0, 10);
+  const F = CONFIG.fechas.filter((f) => f.fecha >= hoy).sort((a, b) => a.fecha.localeCompare(b.fecha));
+  if (!F.length) { $("listaFechas").innerHTML = '<div class="vacio"><p class="mut" style="margin:0 0 14px">' + t("sinFechas") + '</p><a class="btn rose" href="#booking">' + t("sinFechas2") + "</a></div>"; return; }
+  $("listaFechas").innerHTML = F.map((f) => { const d = new Date(f.fecha + "T12:00:00");
+    return '<div class="fecha"><div class="d">' + d.getDate() + "<small>" + d.toLocaleDateString(lang === "en" ? "en-GB" : "es-ES", { month: "short" }).replace(".", "") + "</small></div><div><b>" + esc(f.ciudad) + '</b><br><span class="mut">' + esc(f.sala || "") + "</span></div>" + (f.entradas ? '<a class="btn rose" href="' + esc(f.entradas) + '" target="_blank" rel="noopener">' + t("entradas") + "</a>" : "") + "</div>"; }).join("");
+}
+
+/* ---------- Tienda ---------- */
+function pintarTienda() {
+  $("productos").innerHTML = PRODUCTOS.map((p) => '<article class="prod"><img src="' + p.img + '" alt="' + esc(p[lang].t) + '" loading="lazy" data-p="' + p.id + '"><div class="c"><span class="tag">' + esc(p[lang].tag) + "</span><h3>" + esc(p[lang].t) + '</h3><p class="mut" style="margin:0">' + esc(p[lang].d) + '</p><span class="precio">' + p.precio + '</span><button class="btn lime" type="button" data-p="' + p.id + '">' + esc(p[lang].b) + "</button></div></article>").join("")
+    + '<article class="prod"><div class="c" style="justify-content:center"><span class="tag">Feat</span><h3>' + esc(FORMATOS[2][lang][0]) + '</h3><p class="mut" style="margin:0">' + esc(FORMATOS[2][lang][1]) + '</p><a class="btn" href="#booking" onclick="document.getElementById(\'bTipo\').value=\'feat\'">' + t("contratar") + "</a></div></article>";
+  $("productos").querySelectorAll("[data-p]").forEach((el) => el.addEventListener("click", () => abrirProducto(el.dataset.p)));
+}
+const TALLAS = [["XS", 61, 66, 59, 28], ["S", 63, 68, 61, 29], ["M", 65, 70, 63, 30], ["L", 67, 72, 65, 31], ["XL", 69, 74, 67, 32], ["XXL", 71, 76, 69, 33]];
+function abrirProducto(id) {
+  evento("ver_producto", { producto: id });
+  if (id === "drop001") {
+    abrirModal('<span class="tag">Drop 001 · “Creo para trascender”</span><h2 style="font-size:2rem">ORTIZZZ × Nómadas</h2><img src="img/drop001.webp" alt="Drop 001" style="border-radius:8px;margin:10px 0 18px">'
+      + (lang === "en"
+        ? "<h3>Concept</h3><p class=\"mut\">Wabi-sabi, brutalism and Japanese streetwear. Oversized boxy fit: dropped shoulder, raw hem, 3 cm rib collar and vintage wash.</p><h3>Fabric</h3><p class=\"mut\">100% combed compact cotton, pre-shrunk. 320–350 gsm heavy drape.</p><h3>Details</h3><ul><li>Nómadas logo in high-density embroidery.</li><li>ORTIZZZ in 2 mm puff embroidery.</li><li>Back artwork in zero-feel water-based print.</li><li>Visible centre seam panel: the path between past and present.</li><li>Adjustable hem with hidden cords and matte stopper.</li></ul>"
+        : "<h3>Concepto</h3><p class=\"mut\">Wabi-sabi, brutalismo y streetwear japonés. Corte oversized boxy: hombro caído, bajo deshilachado, cuello de canalé de 3 cm y lavado vintage.</p><h3>Tejido</h3><p class=\"mut\">100 % algodón peinado compacto, pre-encogido. 320–350 g/m², caída pesada.</p><h3>Detalles</h3><ul><li>Logo Nómadas en bordado de alta densidad.</li><li>ORTIZZZ en bordado con relieve de 2 mm.</li><li>Diseño de espalda en serigrafía al agua de tacto cero.</li><li>Panel central con costura vista: el camino entre pasado y presente.</li><li>Bajo ajustable con cordones ocultos y stopper negro mate.</li></ul>")
+      + "<h3>" + t("talla") + ' (cm)</h3><div style="overflow-x:auto"><table><tr><th>' + t("talla") + "</th><th>" + (lang === "en" ? "Chest" : "Pecho") + "</th><th>" + (lang === "en" ? "Length" : "Largo") + "</th><th>" + (lang === "en" ? "Shoulder" : "Hombro") + "</th><th>" + (lang === "en" ? "Armhole" : "Sisa") + "</th></tr>"
+      + TALLAS.map((r) => "<tr>" + r.map((c) => "<td>" + c + "</td>").join("") + "</tr>").join("") + '</table></div>'
+      + '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;align-items:end"><div style="flex:1 1 120px"><label for="mTalla">' + t("talla") + '</label><select id="mTalla">' + TALLAS.map((r) => "<option>" + r[0] + "</option>").join("") + '</select></div><button class="btn lime" type="button" id="mReservar" style="flex:2 1 200px"><svg><use href="#i-wa"/></svg>' + t("reservar") + " · 25 €</button></div>");
+    $("mReservar").addEventListener("click", () => { evento("reserva", { producto: "drop001", talla: $("mTalla").value }); window.open(waURL("Hola, quiero reservar la camiseta Drop 001 ORTIZZZ × Nómadas en talla " + $("mTalla").value + "."), "_blank", "noopener"); });
+  } else if (id === "vip") {
+    const ben = lang === "en"
+      ? [["Unreleased music", "Demos and tracks before they hit Spotify."], ["Early access", "Priority booking for private shows and events."], ["Drop discounts", "VIP prices on every merch collection."], ["Living content", "Same card, new surprises every month."]]
+      : [["Música inédita", "Maquetas y temas antes de su estreno en Spotify."], ["Acceso prioritario", "Reserva antes que nadie para shows privados y eventos."], ["Descuentos en drops", "Precio VIP en cada colección de ropa."], ["Contenido vivo", "La misma tarjeta, sorpresas nuevas cada mes."]];
+    abrirModal('<span class="tag">New Era Club</span><h2 style="font-size:2rem">Smart Card NFC VIP</h2><img src="img/vip-card.webp" alt="Smart Card NFC VIP" style="border-radius:8px;margin:10px 0 18px"><p class="mut">' + (lang === "en" ? "No battery, no app. Tap your phone on the card and your private portal opens in one second." : "Sin batería ni aplicaciones. Acerca el móvil a la tarjeta y en un segundo se abre tu portal privado.") + '</p><div class="formatos">' + ben.map((b) => '<div class="formato" style="border-left-color:var(--lime)"><h3>' + b[0] + "</h3><p>" + b[1] + "</p></div>").join("") + '</div><button class="btn lime" type="button" id="mVip"><svg><use href="#i-wa"/></svg>' + t("conseguir") + " · 15 €</button>");
+    $("mVip").addEventListener("click", () => { evento("reserva", { producto: "vip" }); window.open(waURL("Hola, quiero mi Smart Card NFC VIP de ORTIZZZ."), "_blank", "noopener"); });
+  }
+}
+function abrirModal(html) { $("mCaja").innerHTML = html; $("modal").hidden = false; document.body.style.overflow = "hidden"; }
+function cerrarModal() { $("modal").hidden = true; document.body.style.overflow = ""; }
+$("mX").addEventListener("click", cerrarModal);
+$("modal").addEventListener("click", (e) => { if (e.target === $("modal")) cerrarModal(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") cerrarModal(); });
+
+/* ---------- Prensa ---------- */
+function pintarPrensa() {
+  $("fotosPrensa").innerHTML = CONFIG.fotosPrensa.map((f) => '<a class="ph" href="' + esc(f.archivo) + '" download><img src="' + esc(f.vista) + '" alt="' + esc(f[lang]) + '" loading="lazy"><span>' + t("descargar") + " · " + esc(f[lang]) + "</span></a>").join("");
+  $("fotosPrensa").querySelectorAll("a").forEach((a) => a.addEventListener("click", () => evento("descarga_prensa", { archivo: a.getAttribute("href") })));
+}
+
+/* ---------- Contacto ---------- */
+$("cWa").href = waURL("Hola Studio 42, quisiera información para contratar a ORTIZZZ.");
+$("cMail").href = "mailto:" + CONFIG.email; $("cMailTxt").textContent = CONFIG.email;
+$("anio").textContent = new Date().getFullYear();
+
+/* ---------- Idioma ---------- */
+function aplicarIdioma() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i]").forEach((el) => { const v = T[lang][el.dataset.i]; if (typeof v === "string") el.textContent = v; });
+  $("bLang").textContent = lang === "es" ? "EN" : "ES";
+  pintarMusica(); pintarBio(); pintarBooking(); pintarFechas(); pintarTienda(); pintarPrensa();
+}
+$("bLang").addEventListener("click", () => { lang = lang === "es" ? "en" : "es"; guardar.set("oz_lang", lang); aplicarIdioma(); });
+
+/* ---------- Audio de adelanto (solo si el visitante lo pide) ---------- */
+function pararAudio() { const a = $("audio"); if (!a.paused) { a.pause(); $("player").classList.remove("on"); $("uPlay").setAttribute("href", "#i-play"); } }
+function alternarAudio() {
+  const a = $("audio");
+  if (a.paused) { a.volume = .6; a.play().then(() => { $("player").classList.add("on"); $("uPlay").setAttribute("href", "#i-pause"); evento("escuchar_adelanto"); }).catch(() => {}); }
+  else pararAudio();
+}
+$("bPlay").addEventListener("click", alternarAudio);
+$("bAdelanto").addEventListener("click", alternarAudio);
+document.addEventListener("visibilitychange", () => { if (document.hidden) pararAudio(); });
+
+/* ---------- Cookies y analítica (solo con consentimiento) ---------- */
+function cargarGA() {
+  if (!CONFIG.ga || window.gtag) return;
+  const s = document.createElement("script"); s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + CONFIG.ga; document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer.push(arguments); };
+  gtag("js", new Date()); gtag("config", CONFIG.ga, { anonymize_ip: true });
+}
+const ck = guardar.get("oz_cookies");
+if (ck === "si") cargarGA(); else if (!ck) $("cookies").hidden = false;
+$("ckSi").addEventListener("click", () => { guardar.set("oz_cookies", "si"); $("cookies").hidden = true; cargarGA(); });
+$("ckNo").addEventListener("click", () => { guardar.set("oz_cookies", "no"); $("cookies").hidden = true; });
+$("bCookies").addEventListener("click", (e) => { e.preventDefault(); $("cookies").hidden = false; });
+
+/* ---------- Barra y animaciones ---------- */
+addEventListener("scroll", () => $("top").classList.toggle("solid", scrollY > 40), { passive: true });
+const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("v"); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+document.querySelectorAll(".rv").forEach((el) => io ? io.observe(el) : el.classList.add("v"));
+document.addEventListener("click", (e) => { const a = e.target.closest && e.target.closest('a[target="_blank"]'); if (a) evento("salida", { destino: a.hostname }); });
+
+aplicarIdioma();
+</script>
 </body>
 </html>
