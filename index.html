@@ -282,7 +282,7 @@ footer a{color:#77777d}
 
 <section id="tienda">
   <div class="w">
-    <div class="rv"><span class="eti" data-i="eTienda">Tienda</span><h2 data-i="tTienda">Merch y New Era Club</h2></div>
+    <div class="rv"><span class="eti" data-i="eTienda">Tienda</span><h2 data-i="tTienda">Merch y colaboraciones</h2></div>
     <div class="tienda rv" id="productos"></div>
   </div>
 </section>
@@ -371,27 +371,29 @@ const CONFIG = {
   ]
 };
 
-/* Formatos de contratación. precio = "desde" (sin desplazamiento ni alojamiento fuera de La Rioja). */
+/* Formatos de contratación. precio = "desde", sin IVA. Fuera de La Rioja se suma desplazamiento y alojamiento del equipo. */
 const FORMATOS = [
-  { id: "showcase", precio: 200, es: ["Showcase", "20–25 min · voz en directo sobre pistas. Para fiestas, bares y presentaciones."], en: ["Showcase", "20–25 min · live vocals over tracks. For parties, bars and launches."] },
-  { id: "show", precio: 450, es: ["Show completo", "40–45 min · voz, pistas y 2 bailarinas. Para salas, festivales y fiestas grandes."], en: ["Full show", "40–45 min · vocals, tracks and 2 dancers. For clubs, festivals and big parties."] },
-  { id: "acustico", precio: 180, es: ["Acústico", "45–60 min · voz y guitarra. Para eventos íntimos, marcas y bodas."], en: ["Acoustic", "45–60 min · voice and guitar. For intimate events, brands and weddings."] },
+  { id: "show", precio: 700, es: ["Show New Era", "60 min · ORTIZZZ en directo con DJ y 2 bailarinas. El formato principal para salas, fiestas y festivales."], en: ["New Era Show", "60 min · ORTIZZZ live with DJ and 2 dancers. The main format for clubs, parties and festivals."] },
+  { id: "completo", precio: 900, es: ["Show completo", "60 min · DJ, 2 bailarinas y corista. Para escenarios grandes, fiestas patronales y eventos de marca."], en: ["Full show", "60 min · DJ, 2 dancers and backing vocalist. For big stages, town festivals and brand events."] },
+  { id: "showcase", precio: 350, es: ["Showcase", "30 min · ORTIZZZ con DJ. Para presentaciones, bares y fiestas privadas."], en: ["Showcase", "30 min · ORTIZZZ with DJ. For launches, bars and private parties."] },
+  { id: "acustico", precio: 250, es: ["Acústico", "45–60 min · voz y guitarra. Para eventos íntimos, marcas y bodas."], en: ["Acoustic", "45–60 min · voice and guitar. For intimate events, brands and weddings."] },
   { id: "feat", precio: 150, es: ["Feat y estribillos", "Colaboración en tu tema: estribillo, verso o composición."], en: ["Features & hooks", "Collaboration on your track: hook, verse or songwriting."] }
 ];
-const PRESUPUESTOS = { es: ["A consultar", "Hasta 200 €", "200–500 €", "500–1.000 €", "Más de 1.000 €"], en: ["To discuss", "Up to €200", "€200–500", "€500–1,000", "Over €1,000"] };
+const PRESUPUESTOS = { es: ["A consultar", "Hasta 400 €", "400–800 €", "800–1.200 €", "Más de 1.200 €"], en: ["To discuss", "Up to €400", "€400–800", "€800–1,200", "Over €1,200"] };
 /* Rider técnico y hospitalidad */
 const RIDER = {
-  es: [["Sonido", ["Equipo de sonido acorde al aforo y técnico de sonido", "1 micrófono vocal inalámbrico (2 si hay invitado)", "Entrada para pistas: jack o USB desde portátil o pendrive", "2 monitores de suelo o sistema in-ear"]],
-       ["Escenario", ["Mínimo 3 × 2 m (4 × 3 m con bailarinas)", "Prueba de sonido de 30 min antes de abrir puertas", "Acústico: 1 entrada DI para guitarra y taburete"]],
-       ["Hospitalidad", ["Camerino o zona privada", "Agua para el equipo y comida si el show es en horario de cena", "Fuera de La Rioja: desplazamiento y alojamiento"]]],
-  en: [["Sound", ["PA suited to the venue and a sound engineer", "1 wireless vocal mic (2 with a guest)", "Track input: jack or USB from laptop or USB stick", "2 floor monitors or in-ear system"]],
-       ["Stage", ["Minimum 3 × 2 m (4 × 3 m with dancers)", "30-min soundcheck before doors", "Acoustic: 1 DI input for guitar and a stool"]],
-       ["Hospitality", ["Dressing room or private area", "Water for the crew and a meal for evening shows", "Outside La Rioja: travel and accommodation"]]]
+  es: [["Sonido", ["Equipo de sonido acorde al aforo y técnico de sonido durante todo el show", "3 micrófonos vocales inalámbricos tipo SM58 / Beta 58 (artista, corista y reserva)", "2 envíos de in-ear (artista y corista) o, si no hay, 2 monitores de suelo", "Mesa de mezclas con 2 canales libres en estéreo para el DJ"]],
+       ["DJ", ["Mesa estable de 1,2 m a la altura de la cintura en el escenario", "2 tomas de corriente junto a la mesa", "1 monitor de DJ", "El DJ lleva su controlador; si la sala tiene 2 CDJ y mezclador, mejor"]],
+       ["Escenario", ["Mínimo 4 × 3 m con bailarinas (3 × 2 m en showcase)", "Iluminación básica de escenario", "Prueba de sonido de 45 min antes de abrir puertas", "Acústico: 1 entrada DI para guitarra y un taburete"]],
+       ["Hospitalidad", ["Camerino o zona privada para 5 personas con espejo", "Agua para el equipo y comida si el show es en horario de cena", "Acceso para carga y descarga", "Fuera de La Rioja: desplazamiento y alojamiento del equipo"]]],
+  en: [["Sound", ["PA suited to the venue and a sound engineer for the whole show", "3 wireless vocal mics, SM58 / Beta 58 type (artist, backing vocalist, spare)", "2 in-ear mixes (artist and backing vocalist) or 2 floor monitors", "Mixing desk with 2 free stereo channels for the DJ"]],
+       ["DJ", ["Sturdy 1.2 m table at waist height on stage", "2 power sockets by the table", "1 DJ monitor", "DJ brings a controller; 2 CDJs and a mixer at the venue are welcome"]],
+       ["Stage", ["Minimum 4 × 3 m with dancers (3 × 2 m for showcase)", "Basic stage lighting", "45-min soundcheck before doors", "Acoustic: 1 DI input for guitar and a stool"]],
+       ["Hospitality", ["Dressing room or private area for 5 people with a mirror", "Water for the crew and a meal for evening shows", "Load-in access", "Outside La Rioja: travel and accommodation for the crew"]]]
 };
 
 const PRODUCTOS = [
-  { id: "drop001", img: "img/drop001.webp", precio: "25 €", es: { tag: "Drop 001", t: "ORTIZZZ × Nómadas", d: "Boxy fit 320–350 g/m² · edición limitada", b: "Ver ficha y tallas" }, en: { tag: "Drop 001", t: "ORTIZZZ × Nómadas", d: "Boxy fit 320–350 gsm · limited edition", b: "Specs & sizes" } },
-  { id: "vip", img: "img/vip-card.webp", precio: "15 €", es: { tag: "New Era Club", t: "Smart Card NFC VIP", d: "Tu pase físico: acércala al móvil y entras al club", b: "Ver beneficios" }, en: { tag: "New Era Club", t: "NFC VIP Smart Card", d: "Your physical pass: tap it and you're in the club", b: "See perks" } }
+  { id: "drop001", img: "img/drop001.webp", precio: "25 €", es: { tag: "Drop 001", t: "ORTIZZZ × Nómadas", d: "Boxy fit 320–350 g/m² · edición limitada", b: "Ver ficha y tallas" }, en: { tag: "Drop 001", t: "ORTIZZZ × Nómadas", d: "Boxy fit 320–350 gsm · limited edition", b: "Specs & sizes" } }
 ];
 
 /* Textos en dos idiomas */
@@ -405,11 +407,11 @@ const T = {
     lNombre: "Tu nombre y empresa", lTipo: "Qué buscas", lFecha: "Fecha", lCiudad: "Ciudad y sala", lAforo: "Aforo aproximado", lPresu: "Presupuesto orientativo", lMsg: "Algo más",
     eWa: "Enviar por WhatsApp", eMail: "Enviar por email", eFechas: "En directo", tFechas: "Próximas fechas",
     sinFechas: "Ahora mismo no hay fechas anunciadas.", sinFechas2: "Contrátalo para tu evento", entradas: "Entradas",
-    eTienda: "Tienda", tTienda: "Merch y New Era Club", ePrensa: "Prensa y promotores", tPrensa: "Kit de prensa",
+    eTienda: "Tienda", tTienda: "Merch y colaboraciones", ePrensa: "Prensa y promotores", tPrensa: "Kit de prensa",
     pPrensa: "Fotos oficiales en alta resolución, libres para usar en carteles y notas de prensa citando al artista.", descargar: "Descargar",
     pContacto: "Representación, booking y colaboraciones.", fDerechos: "Todos los derechos reservados", fCookies: "Preferencias de cookies",
     adelanto: "Adelanto", cookiesTxt: "Usamos Google Analytics para saber cuánta gente visita la web. Solo se activa si aceptas.", ckSi: "Aceptar", ckNo: "Rechazar",
-    desde: "Desde", rider: "Rider técnico y hospitalidad", riderNota: "Precios orientativos sin IVA. Cada evento se cierra con presupuesto según duración, bailarinas y equipo técnico disponible.", singlesTxt: "Singles", escucharLista: "Ver los vídeos",
+    desde: "Desde", rider: "Rider técnico y hospitalidad", riderNota: "Precios «desde», sin IVA, con el equipo incluido. Cada evento se cierra con presupuesto según duración, formato y equipo técnico de la sala.", singlesTxt: "Singles", escucharLista: "Ver los vídeos",
     copiado: "Bio copiada", faltaNombre: "Escribe tu nombre para que podamos responderte", verVideo: "Ver vídeo", escucharEn: "Escuchar en",
     loQuiero: "Lo quiero", talla: "Talla", reservar: "Reservar por WhatsApp", conseguir: "Conseguir mi tarjeta",
     bio: {
@@ -430,11 +432,11 @@ const T = {
     lNombre: "Your name and company", lTipo: "What you need", lFecha: "Date", lCiudad: "City and venue", lAforo: "Approx. capacity", lPresu: "Approx. budget", lMsg: "Anything else",
     eWa: "Send via WhatsApp", eMail: "Send via email", eFechas: "Live", tFechas: "Upcoming dates",
     sinFechas: "No dates announced right now.", sinFechas2: "Book him for your event", entradas: "Tickets",
-    eTienda: "Shop", tTienda: "Merch & New Era Club", ePrensa: "Press & promoters", tPrensa: "Press kit",
+    eTienda: "Shop", tTienda: "Merch & collaborations", ePrensa: "Press & promoters", tPrensa: "Press kit",
     pPrensa: "Official high-resolution photos, free to use in posters and press releases crediting the artist.", descargar: "Download",
     pContacto: "Management, booking and collaborations.", fDerechos: "All rights reserved", fCookies: "Cookie preferences",
     adelanto: "Preview", cookiesTxt: "We use Google Analytics to count visits. It only runs if you accept.", ckSi: "Accept", ckNo: "Decline",
-    desde: "From", rider: "Technical rider & hospitality", riderNota: "Indicative prices before VAT. Every event is quoted on duration, dancers and available technical equipment.", singlesTxt: "Singles", escucharLista: "Watch the videos",
+    desde: "From", rider: "Technical rider & hospitality", riderNota: "Starting prices before VAT, crew included. Every event is quoted on duration, format and the venue's technical equipment.", singlesTxt: "Singles", escucharLista: "Watch the videos",
     copiado: "Bio copied", faltaNombre: "Add your name so we can reply", verVideo: "Watch video", escucharEn: "Listen on",
     loQuiero: "I want it", talla: "Size", reservar: "Reserve on WhatsApp", conseguir: "Get my card",
     bio: {
@@ -562,12 +564,6 @@ function abrirProducto(id) {
       + TALLAS.map((r) => "<tr>" + r.map((c) => "<td>" + c + "</td>").join("") + "</tr>").join("") + '</table></div>'
       + '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;align-items:end"><div style="flex:1 1 120px"><label for="mTalla">' + t("talla") + '</label><select id="mTalla">' + TALLAS.map((r) => "<option>" + r[0] + "</option>").join("") + '</select></div><button class="btn lime" type="button" id="mReservar" style="flex:2 1 200px"><svg><use href="#i-wa"/></svg>' + t("reservar") + " · 25 €</button></div>");
     $("mReservar").addEventListener("click", () => { evento("reserva", { producto: "drop001", talla: $("mTalla").value }); window.open(waURL("Hola, quiero reservar la camiseta Drop 001 ORTIZZZ × Nómadas en talla " + $("mTalla").value + "."), "_blank", "noopener"); });
-  } else if (id === "vip") {
-    const ben = lang === "en"
-      ? [["Unreleased music", "Demos and tracks before they hit Spotify."], ["Early access", "Priority booking for private shows and events."], ["Drop discounts", "VIP prices on every merch collection."], ["Living content", "Same card, new surprises every month."]]
-      : [["Música inédita", "Maquetas y temas antes de su estreno en Spotify."], ["Acceso prioritario", "Reserva antes que nadie para shows privados y eventos."], ["Descuentos en drops", "Precio VIP en cada colección de ropa."], ["Contenido vivo", "La misma tarjeta, sorpresas nuevas cada mes."]];
-    abrirModal('<span class="tag">New Era Club</span><h2 style="font-size:2rem">Smart Card NFC VIP</h2><img src="img/vip-card.webp" alt="Smart Card NFC VIP" style="border-radius:8px;margin:10px 0 18px"><p class="mut">' + (lang === "en" ? "No battery, no app. Tap your phone on the card and your private portal opens in one second." : "Sin batería ni aplicaciones. Acerca el móvil a la tarjeta y en un segundo se abre tu portal privado.") + '</p><div class="formatos">' + ben.map((b) => '<div class="formato" style="border-left-color:var(--lime)"><h3>' + b[0] + "</h3><p>" + b[1] + "</p></div>").join("") + '</div><button class="btn lime" type="button" id="mVip"><svg><use href="#i-wa"/></svg>' + t("conseguir") + " · 15 €</button>");
-    $("mVip").addEventListener("click", () => { evento("reserva", { producto: "vip" }); window.open(waURL("Hola, quiero mi Smart Card NFC VIP de ORTIZZZ."), "_blank", "noopener"); });
   }
 }
 function abrirModal(html) { $("mCaja").innerHTML = html; $("modal").hidden = false; document.body.style.overflow = "hidden"; }
