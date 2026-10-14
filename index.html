@@ -21,7 +21,7 @@
 <link rel="icon" href="img/firma.webp" type="image/webp">
 <link rel="preload" href="img/hero.webp" as="image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MusicGroup","name":"ORTIZZZ","alternateName":["Ortizzz","ORTIIZZZ"],"url":"https://ortiizzz.com/","image":"https://ortiizzz.com/img/og.jpg","genre":["Dancehall","Afrobeat","Reggaetón","Urbano latino"],"foundingLocation":{"@type":"Place","name":"España"},"sameAs":["https://instagram.com/ortiizzzp/","https://tiktok.com/@ortizzzviejo","https://youtube.com/@Ortizzzp"],"contactPoint":{"@type":"ContactPoint","contactType":"booking","email":"ceo@studio42.es","telephone":"+34641607302"}}
+{"@context":"https://schema.org","@type":"MusicGroup","name":"ORTIZZZ","alternateName":["Ortizzz","ORTIIZZZ"],"url":"https://ortiizzz.com/","image":"https://ortiizzz.com/img/og.jpg","genre":["Dancehall","Afrobeat","Reggaetón","Urbano latino"],"foundingLocation":{"@type":"Place","name":"España"},"sameAs":["https://open.spotify.com/artist/2ChaOXvU7KUU359U7kRBoN","https://music.apple.com/es/artist/ortizzz/1818936131","https://instagram.com/ortiizzzp/","https://tiktok.com/@ortizzzviejo","https://youtube.com/@Ortizzzp"],"contactPoint":{"@type":"ContactPoint","contactType":"booking","email":"ceo@studio42.es","telephone":"+34641607302"}}
 </script>
 <style>
 :root{--bg:#050505;--bg2:#0c0c0d;--bg3:#141416;--line:rgba(255,255,255,.08);--txt:#f4f4f4;--mut:#9a9a9f;--rose:#fd1d53;--lime:#ccff00;
@@ -102,6 +102,12 @@ h3{font:800 1.1rem var(--fd);margin:0 0 6px;letter-spacing:.02em}
 .formatos{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:6px 0 30px}
 .formato{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--rose);border-radius:8px;padding:18px}
 .formato p{margin:0;color:var(--mut);font-size:.92rem}
+.formato .desde{margin-top:10px;color:var(--lime);font-weight:700;letter-spacing:.04em}
+.rider{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:0 0 24px}
+.rider[open]{display:grid;gap:4px 24px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.rider summary{cursor:pointer;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;grid-column:1/-1;padding:2px 0}
+.rider ul{margin:0 0 10px;padding-left:18px;color:#c9c9ce;font-size:.92rem}
+.lista-temas{color:#c9c9ce;font-size:.9rem;letter-spacing:.06em;margin:4px 0 0}
 form.book{display:grid;gap:12px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:20px}
 @media(min-width:700px){form.book{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
 label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);display:block;margin-bottom:6px}
@@ -175,9 +181,10 @@ footer a{color:#77777d}
   <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.1z"/></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.4 7H19.6zM4 9v8h16V9l-8 5.5z"/></symbol>
   <symbol id="i-dl" viewBox="0 0 24 24"><path d="M11 3h2v10l3.5-3.5 1.4 1.4L12 16.8l-5.9-5.9 1.4-1.4L11 13zM4 19h16v2H4z"/></symbol>
-  <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3.1 0-4.1.1C3.7 2.3 2.3 3.7 2.1 7.9 2 8.9 2 9.3 2 12s0 3.1.1 4.1c.2 4.2 1.6 5.6 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c4.2-.2 5.6-1.6 5.8-5.8.1-1 .1-1.4.1-4.1s0-3.1-.1-4.1c-.2-4.2-1.6-5.6-5.8-5.8C15.1 2 14.7 2 12 2z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
   <symbol id="i-tt" viewBox="0 0 24 24"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2-2.8V9.1a6.3 6.3 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.4 1.3V6.5a4.5 4.5 0 0 1-4.4-4.5z"/></symbol>
   <symbol id="i-yt" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></symbol>
+  <symbol id="i-am" viewBox="0 0 24 24"><path d="M17.5 2.6 9 4.4c-.6.1-1 .6-1 1.2v9.6a3.5 3.5 0 1 0 2 3.2V9.2l7-1.5v5.5a3.5 3.5 0 1 0 2 3.2V3.6c0-.6-.6-1.1-1.5-1z"/></symbol>
   <symbol id="i-sp" viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm5.5 17.3c-.2.4-.7.5-1 .3-2.8-1.7-6.4-2.1-10.6-1.1-.4.1-.8-.2-.9-.6-.1-.4.2-.8.6-.9 4.6-1 8.5-.6 11.6 1.3.4.2.5.7.3 1zm1.5-3.3c-.3.4-.8.6-1.3.3-3.2-2-8.2-2.6-11.9-1.4-.5.1-1-.1-1.1-.6-.1-.5.1-1 .6-1.1 4.3-1.3 9.7-.7 13.4 1.6.4.2.6.8.3 1.2zm.1-3.4C15.2 8.4 8.8 8.2 5.2 9.3c-.6.2-1.2-.2-1.4-.7-.2-.6.2-1.2.7-1.4 4.3-1.3 11.3-1 15.7 1.6.5.3.7 1 .4 1.6-.3.4-1 .6-1.5.3z"/></symbol>
 </svg>
 
@@ -218,7 +225,7 @@ footer a{color:#77777d}
     <div class="rv"><div class="video" id="video"></div></div>
   </div>
   <div class="w" id="otrosWrap" style="margin-top:34px" hidden>
-    <span class="eti" data-i="eMas">Más vídeos</span>
+    <span class="eti" data-i="eMas">Más lanzamientos</span>
     <div class="tienda" id="otros" style="margin-top:14px"></div>
   </div>
 </section>
@@ -248,6 +255,7 @@ footer a{color:#77777d}
       <p class="mut" data-i="pBooking" style="max-width:640px">Fiestas, salas, festivales, eventos de marca o tu propia canción. Cuéntanos qué necesitas y te respondemos con disponibilidad y presupuesto.</p>
     </div>
     <div class="formatos rv" id="formatos"></div>
+    <details class="rider rv" id="rider"></details>
     <form class="book rv" id="fBook" novalidate>
       <div><label for="bNombre" data-i="lNombre">Tu nombre y empresa</label><input id="bNombre" required autocomplete="name"></div>
       <div><label for="bTipo" data-i="lTipo">Qué buscas</label><select id="bTipo"></select></div>
@@ -339,17 +347,20 @@ const CONFIG = {
     instagram: "https://instagram.com/ortiizzzp/",
     tiktok: "https://tiktok.com/@ortizzzviejo",
     youtube: "https://youtube.com/@Ortizzzp",
-    spotify: ""                              // PENDIENTE: enlace del perfil de artista (open.spotify.com/artist/...)
+    spotify: "https://open.spotify.com/artist/2ChaOXvU7KUU359U7kRBoN",
+    apple: "https://music.apple.com/es/artist/ortizzz/1818936131"
   },
-  /* Lanzamientos: el primero es el destacado. youtube = el código del vídeo. */
+  /* Lanzamientos: el primero es el destacado. youtube = código de un vídeo; playlist = código de una lista de YouTube. */
   lanzamientos: [
-    { titulo: "Placata", tipo: "Videoclip oficial", youtube: "4VrczY2Axac", spotify: "", apple: "" }
+    { titulo: "The Album (Cara A)", tipo: { es: "EP · 5 temas · 2026", en: "EP · 5 tracks · 2026" }, temas: "WET · PLAKATA · LIBRA DE CADERA · DESCARAH", playlist: "PLGqj8uxW3QW0", portada: "img/hero.webp" },
+    { titulo: "The Album (Cara B)", tipo: { es: "EP · 6 temas · 2026", en: "EP · 6 tracks · 2026" }, temas: "REGEAHALL · PERDIOXX · MMM · LLOCUE · GIVE ME · ESPAÑOLATINA", playlist: "PLPlO8V5vtans", portada: "img/retrato.webp" }
   ],
+  singles: "FRIKITI · tumbao (2025)",
   /* Cifras para promotores. Solo se muestran las que tengan valor. */
   datos: [
-    { valor: "", es: "Oyentes mensuales en Spotify", en: "Spotify monthly listeners" },
-    { valor: "", es: "Seguidores en Instagram", en: "Instagram followers" },
-    { valor: "", es: "Shows en directo", en: "Live shows" },
+    { valor: "2 EP", es: "Publicados en 2026", en: "Released in 2026" },
+    { valor: "13", es: "Temas en plataformas", en: "Tracks on streaming" },
+    { valor: "3 shows", es: "Lanzarote y Tenerife", en: "Lanzarote and Tenerife" },
     { valor: "ES · VE", es: "Mercados", en: "Markets" }
   ],
   /* Próximas fechas: { fecha: "2026-11-21", ciudad: "Logroño", sala: "…", entradas: "https://…" } */
@@ -360,12 +371,23 @@ const CONFIG = {
   ]
 };
 
+/* Formatos de contratación. precio = "desde" (sin desplazamiento ni alojamiento fuera de La Rioja). */
 const FORMATOS = [
-  { id: "show", es: ["Show urbano", "Voz en directo sobre pistas: dancehall, afro y reggaetón. Ideal para salas, fiestas y festivales."], en: ["Urban show", "Live vocals over tracks: dancehall, afro and reggaeton. For clubs, parties and festivals."] },
-  { id: "acustico", es: ["Acústico", "Voz y guitarra. Para eventos íntimos, marcas, bodas y presentaciones."], en: ["Acoustic", "Voice and guitar. For intimate events, brands, weddings and launches."] },
-  { id: "feat", es: ["Feat y estribillos", "Colaboración en tu tema: estribillo, verso o composición."], en: ["Features & hooks", "Collaboration on your track: hook, verse or songwriting."] }
+  { id: "showcase", precio: 200, es: ["Showcase", "20–25 min · voz en directo sobre pistas. Para fiestas, bares y presentaciones."], en: ["Showcase", "20–25 min · live vocals over tracks. For parties, bars and launches."] },
+  { id: "show", precio: 450, es: ["Show completo", "40–45 min · voz, pistas y 2 bailarinas. Para salas, festivales y fiestas grandes."], en: ["Full show", "40–45 min · vocals, tracks and 2 dancers. For clubs, festivals and big parties."] },
+  { id: "acustico", precio: 180, es: ["Acústico", "45–60 min · voz y guitarra. Para eventos íntimos, marcas y bodas."], en: ["Acoustic", "45–60 min · voice and guitar. For intimate events, brands and weddings."] },
+  { id: "feat", precio: 150, es: ["Feat y estribillos", "Colaboración en tu tema: estribillo, verso o composición."], en: ["Features & hooks", "Collaboration on your track: hook, verse or songwriting."] }
 ];
-const PRESUPUESTOS = { es: ["A consultar", "Menos de 300 €", "300–800 €", "800–1.500 €", "Más de 1.500 €"], en: ["To discuss", "Under €300", "€300–800", "€800–1,500", "Over €1,500"] };
+const PRESUPUESTOS = { es: ["A consultar", "Hasta 200 €", "200–500 €", "500–1.000 €", "Más de 1.000 €"], en: ["To discuss", "Up to €200", "€200–500", "€500–1,000", "Over €1,000"] };
+/* Rider técnico y hospitalidad */
+const RIDER = {
+  es: [["Sonido", ["Equipo de sonido acorde al aforo y técnico de sonido", "1 micrófono vocal inalámbrico (2 si hay invitado)", "Entrada para pistas: jack o USB desde portátil o pendrive", "2 monitores de suelo o sistema in-ear"]],
+       ["Escenario", ["Mínimo 3 × 2 m (4 × 3 m con bailarinas)", "Prueba de sonido de 30 min antes de abrir puertas", "Acústico: 1 entrada DI para guitarra y taburete"]],
+       ["Hospitalidad", ["Camerino o zona privada", "Agua para el equipo y comida si el show es en horario de cena", "Fuera de La Rioja: desplazamiento y alojamiento"]]],
+  en: [["Sound", ["PA suited to the venue and a sound engineer", "1 wireless vocal mic (2 with a guest)", "Track input: jack or USB from laptop or USB stick", "2 floor monitors or in-ear system"]],
+       ["Stage", ["Minimum 3 × 2 m (4 × 3 m with dancers)", "30-min soundcheck before doors", "Acoustic: 1 DI input for guitar and a stool"]],
+       ["Hospitality", ["Dressing room or private area", "Water for the crew and a meal for evening shows", "Outside La Rioja: travel and accommodation"]]]
+};
 
 const PRODUCTOS = [
   { id: "drop001", img: "img/drop001.webp", precio: "25 €", es: { tag: "Drop 001", t: "ORTIZZZ × Nómadas", d: "Boxy fit 320–350 g/m² · edición limitada", b: "Ver ficha y tallas" }, en: { tag: "Drop 001", t: "ORTIZZZ × Nómadas", d: "Boxy fit 320–350 gsm · limited edition", b: "Specs & sizes" } },
@@ -377,7 +399,7 @@ const T = {
   es: {
     nMusica: "Música", nBio: "Bio", nBooking: "Booking", nTienda: "Tienda", nPrensa: "Prensa", contratar: "Contratar",
     kicker: "New Era · Dancehall · Afro · Reggaetón", lead: "Voz y guitarra propia. De Venezuela a España, convierte cada golpe en música.",
-    ctaEscuchar: "Escuchar", ctaContratar: "Contratar un show", eMusica: "Último lanzamiento", eMas: "Más vídeos",
+    ctaEscuchar: "Escuchar", ctaContratar: "Contratar un show", eMusica: "Último lanzamiento", eMas: "Más lanzamientos",
     eBio: "El proyecto", tBio: "Autodidacta, versátil y con historia", bCorta: "Corta", bLarga: "Completa", bCopiar: "Copiar bio",
     tBooking: "Llévalo a tu escenario", pBooking: "Fiestas, salas, festivales, eventos de marca o tu propia canción. Cuéntanos qué necesitas y te respondemos con disponibilidad y presupuesto.",
     lNombre: "Tu nombre y empresa", lTipo: "Qué buscas", lFecha: "Fecha", lCiudad: "Ciudad y sala", lAforo: "Aforo aproximado", lPresu: "Presupuesto orientativo", lMsg: "Algo más",
@@ -387,10 +409,11 @@ const T = {
     pPrensa: "Fotos oficiales en alta resolución, libres para usar en carteles y notas de prensa citando al artista.", descargar: "Descargar",
     pContacto: "Representación, booking y colaboraciones.", fDerechos: "Todos los derechos reservados", fCookies: "Preferencias de cookies",
     adelanto: "Adelanto", cookiesTxt: "Usamos Google Analytics para saber cuánta gente visita la web. Solo se activa si aceptas.", ckSi: "Aceptar", ckNo: "Rechazar",
+    desde: "Desde", rider: "Rider técnico y hospitalidad", riderNota: "Precios orientativos sin IVA. Cada evento se cierra con presupuesto según duración, bailarinas y equipo técnico disponible.", singlesTxt: "Singles", escucharLista: "Ver los vídeos",
     copiado: "Bio copiada", faltaNombre: "Escribe tu nombre para que podamos responderte", verVideo: "Ver vídeo", escucharEn: "Escuchar en",
     loQuiero: "Lo quiero", talla: "Talla", reservar: "Reservar por WhatsApp", conseguir: "Conseguir mi tarjeta",
     bio: {
-      corta: ["<strong>ORTIZZZ</strong> es un artista urbano venezolano afincado en España. Autodidacta, con voz y guitarra propia, fusiona dancehall, afro y reggaetón y salta con naturalidad de un tema de alta energía a una balada acústica. Su <strong>New Era</strong> convierte una historia de migración y resiliencia en música con identidad."],
+      corta: ["<strong>ORTIZZZ</strong> es un artista urbano venezolano afincado en España. Autodidacta, con voz y guitarra propia, fusiona dancehall, afro y reggaetón y salta con naturalidad de un tema de alta energía a una balada acústica. Su <strong>New Era</strong> convierte una historia de migración y resiliencia en música con identidad. En 2026 publicó los dos EP de <strong>The Album</strong> (Cara A y Cara B) y ya ha llevado su directo a Lanzarote y Tenerife."],
       larga: [
         "Nacido en Venezuela, <strong>ORTIZZZ</strong> encontró en la música su refugio y su voz más honesta. A los 18 años cruzó el océano para establecerse en España y empezar desde cero. La soledad y la dureza de la migración se convirtieron en una prueba de supervivencia que forjó un carácter inquebrantable, y hoy esa experiencia es la que da profundidad a sus letras.",
         "Músico cien por cien autodidacta, encontró en su guitarra y en los ritmos urbanos la herramienta para contar su historia. Su sonido nace de la fusión entre el dancehall, el afro y el reggaetón, con una identidad fresca y reconocible. Su versatilidad le permite pasar de una producción de alta energía a una balada a guitarra limpia sin perder su sello.",
@@ -401,7 +424,7 @@ const T = {
   en: {
     nMusica: "Music", nBio: "Bio", nBooking: "Booking", nTienda: "Shop", nPrensa: "Press", contratar: "Book now",
     kicker: "New Era · Dancehall · Afro · Reggaeton", lead: "His own voice and guitar. From Venezuela to Spain, he turns every hit into music.",
-    ctaEscuchar: "Listen", ctaContratar: "Book a show", eMusica: "Latest release", eMas: "More videos",
+    ctaEscuchar: "Listen", ctaContratar: "Book a show", eMusica: "Latest release", eMas: "More releases",
     eBio: "The project", tBio: "Self-taught, versatile and with a story", bCorta: "Short", bLarga: "Full", bCopiar: "Copy bio",
     tBooking: "Bring him to your stage", pBooking: "Parties, clubs, festivals, brand events or your own song. Tell us what you need and we'll reply with availability and a quote.",
     lNombre: "Your name and company", lTipo: "What you need", lFecha: "Date", lCiudad: "City and venue", lAforo: "Approx. capacity", lPresu: "Approx. budget", lMsg: "Anything else",
@@ -411,10 +434,11 @@ const T = {
     pPrensa: "Official high-resolution photos, free to use in posters and press releases crediting the artist.", descargar: "Download",
     pContacto: "Management, booking and collaborations.", fDerechos: "All rights reserved", fCookies: "Cookie preferences",
     adelanto: "Preview", cookiesTxt: "We use Google Analytics to count visits. It only runs if you accept.", ckSi: "Accept", ckNo: "Decline",
+    desde: "From", rider: "Technical rider & hospitality", riderNota: "Indicative prices before VAT. Every event is quoted on duration, dancers and available technical equipment.", singlesTxt: "Singles", escucharLista: "Watch the videos",
     copiado: "Bio copied", faltaNombre: "Add your name so we can reply", verVideo: "Watch video", escucharEn: "Listen on",
     loQuiero: "I want it", talla: "Size", reservar: "Reserve on WhatsApp", conseguir: "Get my card",
     bio: {
-      corta: ["<strong>ORTIZZZ</strong> is a Venezuelan urban artist based in Spain. Self-taught, with his own voice and guitar, he blends dancehall, afro and reggaeton and moves naturally from high-energy tracks to acoustic ballads. His <strong>New Era</strong> turns a story of migration and resilience into music with identity."],
+      corta: ["<strong>ORTIZZZ</strong> is a Venezuelan urban artist based in Spain. Self-taught, with his own voice and guitar, he blends dancehall, afro and reggaeton and moves naturally from high-energy tracks to acoustic ballads. His <strong>New Era</strong> turns a story of migration and resilience into music with identity. In 2026 he released the two EPs of <strong>The Album</strong> (Side A and Side B) and has already taken his live show to Lanzarote and Tenerife."],
       larga: [
         "Born in Venezuela, <strong>ORTIZZZ</strong> found in music his refuge and his most honest voice. At 18 he crossed the ocean to settle in Spain and start from scratch. The loneliness and hardship of migration became a test of survival that forged an unbreakable character, and that experience is what gives his lyrics their depth today.",
         "A fully self-taught musician, he found in his guitar and in urban rhythms the tool to tell his story. His sound blends dancehall, afro and reggaeton with a fresh, recognisable identity. His versatility lets him move from high-energy productions to a clean guitar ballad without losing his signature.",
@@ -437,7 +461,7 @@ const waURL = (texto) => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeU
 
 /* ---------- Redes y plataformas ---------- */
 function pintarRedes() {
-  const r = CONFIG.redes, items = [["instagram", "i-ig", "Instagram"], ["tiktok", "i-tt", "TikTok"], ["youtube", "i-yt", "YouTube"], ["spotify", "i-sp", "Spotify"]];
+  const r = CONFIG.redes, items = [["instagram", "i-ig", "Instagram"], ["tiktok", "i-tt", "TikTok"], ["youtube", "i-yt", "YouTube"], ["spotify", "i-sp", "Spotify"], ["apple", "i-am", "Apple Music"]];
   $("redes").innerHTML = items.filter((x) => r[x[0]]).map((x) => '<a href="' + esc(r[x[0]]) + '" target="_blank" rel="noopener" aria-label="' + x[2] + '"><svg><use href="#' + x[1] + '"/></svg></a>').join("");
 }
 
@@ -445,22 +469,25 @@ function pintarRedes() {
 function pintarMusica() {
   const L = CONFIG.lanzamientos, top = L[0];
   if (!top) { $("musica").hidden = true; return; }
+  const tipo = (x) => typeof x.tipo === "object" ? x.tipo[lang] : x.tipo;
   $("relTitulo").textContent = top.titulo;
-  $("relTexto").textContent = top.tipo;
-  const plat = [["spotify", "Spotify", top.spotify || CONFIG.redes.spotify], ["apple", "Apple Music", top.apple], ["youtube", "YouTube", top.youtube ? "https://youtu.be/" + top.youtube : ""]];
+  $("relTexto").innerHTML = esc(tipo(top)) + (top.temas ? '<span class="lista-temas" style="display:block">' + esc(top.temas) + "</span>" : "") + (CONFIG.singles ? '<span class="lista-temas" style="display:block;color:var(--mut)">' + t("singlesTxt") + ": " + esc(CONFIG.singles) + "</span>" : "");
+  const yt = top.playlist ? "https://www.youtube.com/playlist?list=" + top.playlist : top.youtube ? "https://youtu.be/" + top.youtube : "";
+  const plat = [["spotify", "Spotify", top.spotify || CONFIG.redes.spotify], ["apple", "Apple Music", top.apple || CONFIG.redes.apple], ["youtube", "YouTube", yt]];
   $("plataformas").innerHTML = plat.filter((p) => p[2]).map((p) => '<a class="btn" href="' + esc(p[2]) + '" target="_blank" rel="noopener">' + t("escucharEn") + " " + p[1] + "</a>").join("");
   montarVideo($("video"), top);
-  const otros = L.slice(1).filter((x) => x.youtube);
+  const otros = L.slice(1).filter((x) => x.youtube || x.playlist);
   $("otrosWrap").hidden = !otros.length;
-  $("otros").innerHTML = otros.map((x, i) => '<div class="video" data-o="' + (i + 1) + '"></div>').join("");
+  $("otros").innerHTML = otros.map((x, i) => '<div><div class="video" data-o="' + (i + 1) + '"></div><p class="lista-temas" style="margin-top:10px"><b style="color:#fff">' + esc(x.titulo) + "</b> · " + esc(tipo(x)) + (x.temas ? "<br>" + esc(x.temas) : "") + "</p></div>").join("");
   $("otros").querySelectorAll("[data-o]").forEach((el) => montarVideo(el, L[+el.dataset.o]));
 }
 function montarVideo(el, rel) {
-  el.style.backgroundImage = "url(https://i.ytimg.com/vi/" + rel.youtube + "/hqdefault.jpg)";
+  el.style.backgroundImage = "url(" + (rel.portada || "https://i.ytimg.com/vi/" + rel.youtube + "/hqdefault.jpg") + ")";
   el.innerHTML = '<button type="button" aria-label="' + t("verVideo") + ": " + esc(rel.titulo) + '"><span class="play"><svg><use href="#i-play"/></svg></span><b>' + esc(rel.titulo) + "</b></button>";
   el.querySelector("button").addEventListener("click", () => {
     pararAudio();
-    el.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(rel.youtube) + '?autoplay=1&rel=0&playsinline=1" title="' + esc(rel.titulo) + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+    const src = rel.playlist ? "https://www.youtube-nocookie.com/embed/videoseries?list=" + encodeURIComponent(rel.playlist) + "&autoplay=1&rel=0&playsinline=1" : "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(rel.youtube) + "?autoplay=1&rel=0&playsinline=1";
+    el.innerHTML = '<iframe src="' + src + '" title="' + esc(rel.titulo) + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
     evento("ver_video", { video: rel.titulo });
   });
 }
@@ -481,7 +508,8 @@ $("bCopiar").addEventListener("click", async () => {
 
 /* ---------- Booking ---------- */
 function pintarBooking() {
-  $("formatos").innerHTML = FORMATOS.map((f) => '<div class="formato"><h3>' + esc(f[lang][0]) + "</h3><p>" + esc(f[lang][1]) + "</p></div>").join("");
+  $("formatos").innerHTML = FORMATOS.map((f) => '<div class="formato"><h3>' + esc(f[lang][0]) + "</h3><p>" + esc(f[lang][1]) + '</p><p class="desde">' + t("desde") + " " + f.precio + " €</p></div>").join("");
+  $("rider").innerHTML = '<summary>' + t("rider") + "</summary>" + RIDER[lang].map((g) => "<div><h3>" + esc(g[0]) + "</h3><ul>" + g[1].map((x) => "<li>" + esc(x) + "</li>").join("") + "</ul></div>").join("") + '<p class="mut" style="grid-column:1/-1;margin:0">' + t("riderNota") + "</p>";
   const sel = $("bTipo").value;
   $("bTipo").innerHTML = FORMATOS.map((f) => '<option value="' + f.id + '">' + esc(f[lang][0]) + "</option>").join("");
   if (sel) $("bTipo").value = sel;
@@ -519,7 +547,7 @@ function pintarFechas() {
 /* ---------- Tienda ---------- */
 function pintarTienda() {
   $("productos").innerHTML = PRODUCTOS.map((p) => '<article class="prod"><img src="' + p.img + '" alt="' + esc(p[lang].t) + '" loading="lazy" data-p="' + p.id + '"><div class="c"><span class="tag">' + esc(p[lang].tag) + "</span><h3>" + esc(p[lang].t) + '</h3><p class="mut" style="margin:0">' + esc(p[lang].d) + '</p><span class="precio">' + p.precio + '</span><button class="btn lime" type="button" data-p="' + p.id + '">' + esc(p[lang].b) + "</button></div></article>").join("")
-    + '<article class="prod"><div class="c" style="justify-content:center"><span class="tag">Feat</span><h3>' + esc(FORMATOS[2][lang][0]) + '</h3><p class="mut" style="margin:0">' + esc(FORMATOS[2][lang][1]) + '</p><a class="btn" href="#booking" onclick="document.getElementById(\'bTipo\').value=\'feat\'">' + t("contratar") + "</a></div></article>";
+    + '<article class="prod"><div class="c" style="justify-content:center"><span class="tag">Feat</span><h3>' + esc(FORMATOS.find((f) => f.id === "feat")[lang][0]) + '</h3><p class="mut" style="margin:0">' + esc(FORMATOS.find((f) => f.id === "feat")[lang][1]) + '</p><a class="btn" href="#booking" onclick="document.getElementById(\'bTipo\').value=\'feat\'">' + t("contratar") + "</a></div></article>";
   $("productos").querySelectorAll("[data-p]").forEach((el) => el.addEventListener("click", () => abrirProducto(el.dataset.p)));
 }
 const TALLAS = [["XS", 61, 66, 59, 28], ["S", 63, 68, 61, 29], ["M", 65, 70, 63, 30], ["L", 67, 72, 65, 31], ["XL", 69, 74, 67, 32], ["XXL", 71, 76, 69, 33]];
@@ -564,7 +592,7 @@ function aplicarIdioma() {
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i]").forEach((el) => { const v = T[lang][el.dataset.i]; if (typeof v === "string") el.textContent = v; });
   $("bLang").textContent = lang === "es" ? "EN" : "ES";
-  pintarMusica(); pintarBio(); pintarBooking(); pintarFechas(); pintarTienda(); pintarPrensa();
+  pintarRedes(); pintarMusica(); pintarBio(); pintarBooking(); pintarFechas(); pintarTienda(); pintarPrensa();
 }
 $("bLang").addEventListener("click", () => { lang = lang === "es" ? "en" : "es"; guardar.set("oz_lang", lang); aplicarIdioma(); });
 
