@@ -136,6 +136,14 @@ textarea{min-height:90px;resize:vertical}
 .prensa a.ph img{width:100%;height:100%;object-fit:cover}
 .prensa a.ph span{position:absolute;left:10px;bottom:10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;background:rgba(0,0,0,.7);padding:6px 10px;border-radius:99px}
 
+/* Galería */
+.galeria{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.galeria{grid-template-columns:repeat(3,1fr)}}
+.galeria button{padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#000;aspect-ratio:3/4;cursor:zoom-in}
+.galeria button:first-child{grid-row:span 2;aspect-ratio:auto}
+.galeria img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.galeria button:hover img{transform:scale(1.04)}
+
 /* Contacto */
 .contacto{text-align:center}
 .contacto .btn{min-width:240px}
@@ -191,7 +199,7 @@ footer a{color:#77777d}
 <header class="top" id="top">
   <a class="logo" href="#inicio">ORTIZZZ</a>
   <nav aria-label="Secciones">
-    <a href="#musica" data-i="nMusica">Música</a><a href="#bio" data-i="nBio">Bio</a><a href="#booking" data-i="nBooking">Booking</a><a href="#tienda" data-i="nTienda">Tienda</a><a href="#prensa" data-i="nPrensa">Prensa</a>
+    <a href="#musica" data-i="nMusica">Música</a><a href="#bio" data-i="nBio">Bio</a><a href="#galeria" data-i="nFotos">Fotos</a><a href="#booking" data-i="nBooking">Booking</a><a href="#tienda" data-i="nTienda">Tienda</a><a href="#prensa" data-i="nPrensa">Prensa</a>
   </nav>
   <button class="pill" id="bLang" type="button" aria-label="Cambiar idioma">EN</button>
   <a class="pill rose" href="#booking" data-i="contratar">Contratar</a>
@@ -244,6 +252,13 @@ footer a{color:#77777d}
       <div class="datos" id="datos"></div>
     </div>
     <div class="rv"><img class="retrato" src="img/retrato.webp" alt="Retrato de ORTIZZZ" loading="lazy" width="1400" height="1051"></div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="w">
+    <div class="rv"><span class="eti" data-i="eGaleria">Imagen</span><h2 data-i="tGaleria">New Era en fotos</h2></div>
+    <div class="galeria rv" id="galeriaFotos"></div>
   </div>
 </section>
 
@@ -365,9 +380,21 @@ const CONFIG = {
   ],
   /* Próximas fechas: { fecha: "2026-11-21", ciudad: "Logroño", sala: "…", entradas: "https://…" } */
   fechas: [],
+  /* Galería: fotos que se ven en la web (vista ligera) */
+  galeria: [
+    { img: "img/galeria/noche-1.webp", es: "ORTIZZZ sentado de noche", en: "ORTIZZZ sitting at night", pos: "50% 60%" },
+    { img: "img/galeria/barberia-1.webp", es: "ORTIZZZ en la barbería", en: "ORTIZZZ at the barbershop", pos: "60% 30%" },
+    { img: "img/galeria/retrato-bicolor.webp", es: "Retrato con el pelo bicolor", en: "Two-tone hair portrait", pos: "50% 35%" },
+    { img: "img/galeria/barberia-2.webp", es: "Primer plano en la barbería", en: "Barbershop close-up", pos: "50% 40%" },
+    { img: "img/galeria/noche-2.webp", es: "ORTIZZZ con la cara tapada", en: "ORTIZZZ with face covered", pos: "50% 45%" }
+  ],
   fotosPrensa: [
     { archivo: "prensa/ortizzz-prensa-1.jpg", vista: "img/hero.webp", es: "Foto oficial 1 · horizontal", en: "Official photo 1 · landscape" },
-    { archivo: "prensa/ortizzz-prensa-2.jpg", vista: "img/retrato.webp", es: "Foto oficial 2 · retrato", en: "Official photo 2 · portrait" }
+    { archivo: "prensa/ortizzz-prensa-2.jpg", vista: "img/retrato.webp", es: "Foto oficial 2 · retrato", en: "Official photo 2 · portrait" },
+    { archivo: "prensa/ortizzz-noche-1.jpg", vista: "img/galeria/noche-1.webp", es: "Foto oficial 3 · noche", en: "Official photo 3 · night" },
+    { archivo: "prensa/ortizzz-noche-2.jpg", vista: "img/galeria/noche-2.webp", es: "Foto oficial 4 · noche", en: "Official photo 4 · night" },
+    { archivo: "prensa/ortizzz-barberia-1.jpg", vista: "img/galeria/barberia-1.webp", es: "Foto oficial 5 · barbería", en: "Official photo 5 · barbershop" },
+    { archivo: "prensa/ortizzz-barberia-2.jpg", vista: "img/galeria/barberia-2.webp", es: "Foto oficial 6 · barbería", en: "Official photo 6 · barbershop" }
   ]
 };
 
@@ -399,7 +426,7 @@ const PRODUCTOS = [
 /* Textos en dos idiomas */
 const T = {
   es: {
-    nMusica: "Música", nBio: "Bio", nBooking: "Booking", nTienda: "Tienda", nPrensa: "Prensa", contratar: "Contratar",
+    nMusica: "Música", nBio: "Bio", nFotos: "Fotos", nBooking: "Booking", nTienda: "Tienda", nPrensa: "Prensa", contratar: "Contratar",
     kicker: "New Era · Dancehall · Afro · Reggaetón", lead: "Voz y guitarra propia. De Venezuela a España, convierte cada golpe en música.",
     ctaEscuchar: "Escuchar", ctaContratar: "Contratar un show", eMusica: "Último lanzamiento", eMas: "Más lanzamientos",
     eBio: "El proyecto", tBio: "Autodidacta, versátil y con historia", bCorta: "Corta", bLarga: "Completa", bCopiar: "Copiar bio",
@@ -407,6 +434,7 @@ const T = {
     lNombre: "Tu nombre y empresa", lTipo: "Qué buscas", lFecha: "Fecha", lCiudad: "Ciudad y sala", lAforo: "Aforo aproximado", lPresu: "Presupuesto orientativo", lMsg: "Algo más",
     eWa: "Enviar por WhatsApp", eMail: "Enviar por email", eFechas: "En directo", tFechas: "Próximas fechas",
     sinFechas: "Ahora mismo no hay fechas anunciadas.", sinFechas2: "Contrátalo para tu evento", entradas: "Entradas",
+    eGaleria: "Imagen", tGaleria: "New Era en fotos",
     eTienda: "Tienda", tTienda: "Merch y colaboraciones", ePrensa: "Prensa y promotores", tPrensa: "Kit de prensa",
     pPrensa: "Fotos oficiales en alta resolución, libres para usar en carteles y notas de prensa citando al artista.", descargar: "Descargar",
     pContacto: "Representación, booking y colaboraciones.", fDerechos: "Todos los derechos reservados", fCookies: "Preferencias de cookies",
@@ -424,7 +452,7 @@ const T = {
     }
   },
   en: {
-    nMusica: "Music", nBio: "Bio", nBooking: "Booking", nTienda: "Shop", nPrensa: "Press", contratar: "Book now",
+    nMusica: "Music", nBio: "Bio", nFotos: "Photos", nBooking: "Booking", nTienda: "Shop", nPrensa: "Press", contratar: "Book now",
     kicker: "New Era · Dancehall · Afro · Reggaeton", lead: "His own voice and guitar. From Venezuela to Spain, he turns every hit into music.",
     ctaEscuchar: "Listen", ctaContratar: "Book a show", eMusica: "Latest release", eMas: "More releases",
     eBio: "The project", tBio: "Self-taught, versatile and with a story", bCorta: "Short", bLarga: "Full", bCopiar: "Copy bio",
@@ -432,6 +460,7 @@ const T = {
     lNombre: "Your name and company", lTipo: "What you need", lFecha: "Date", lCiudad: "City and venue", lAforo: "Approx. capacity", lPresu: "Approx. budget", lMsg: "Anything else",
     eWa: "Send via WhatsApp", eMail: "Send via email", eFechas: "Live", tFechas: "Upcoming dates",
     sinFechas: "No dates announced right now.", sinFechas2: "Book him for your event", entradas: "Tickets",
+    eGaleria: "Image", tGaleria: "New Era in pictures",
     eTienda: "Shop", tTienda: "Merch & collaborations", ePrensa: "Press & promoters", tPrensa: "Press kit",
     pPrensa: "Official high-resolution photos, free to use in posters and press releases crediting the artist.", descargar: "Download",
     pContacto: "Management, booking and collaborations.", fDerechos: "All rights reserved", fCookies: "Cookie preferences",
@@ -578,6 +607,14 @@ function pintarPrensa() {
   $("fotosPrensa").querySelectorAll("a").forEach((a) => a.addEventListener("click", () => evento("descarga_prensa", { archivo: a.getAttribute("href") })));
 }
 
+/* ---------- Galería ---------- */
+function pintarGaleria() {
+  const G = CONFIG.galeria || [];
+  $("galeria").hidden = !G.length;
+  $("galeriaFotos").innerHTML = G.map((g, i) => '<button type="button" data-g="' + i + '" aria-label="' + esc(g[lang]) + '"><img src="' + esc(g.img) + '" alt="' + esc(g[lang]) + '" loading="lazy" style="object-position:' + esc(g.pos || "center") + '"></button>').join("");
+  $("galeriaFotos").querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { const g = G[+b.dataset.g]; abrirModal('<img src="' + esc(g.img) + '" alt="' + esc(g[lang]) + '" style="width:100%;border-radius:8px">'); evento("ver_foto", { foto: g.img }); }));
+}
+
 /* ---------- Contacto ---------- */
 $("cWa").href = waURL("Hola Studio 42, quisiera información para contratar a ORTIZZZ.");
 $("cMail").href = "mailto:" + CONFIG.email; $("cMailTxt").textContent = CONFIG.email;
@@ -588,7 +625,7 @@ function aplicarIdioma() {
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i]").forEach((el) => { const v = T[lang][el.dataset.i]; if (typeof v === "string") el.textContent = v; });
   $("bLang").textContent = lang === "es" ? "EN" : "ES";
-  pintarRedes(); pintarMusica(); pintarBio(); pintarBooking(); pintarFechas(); pintarTienda(); pintarPrensa();
+  pintarRedes(); pintarMusica(); pintarBio(); pintarGaleria(); pintarBooking(); pintarFechas(); pintarTienda(); pintarPrensa();
 }
 $("bLang").addEventListener("click", () => { lang = lang === "es" ? "en" : "es"; guardar.set("oz_lang", lang); aplicarIdioma(); });
 
